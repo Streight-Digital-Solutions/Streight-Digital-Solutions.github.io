@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Streight Digital Solutions — Web Development, Engineered</title>
+<meta name="description" content="Streight Digital Solutions builds high-performance websites and web applications. Precision engineering, sharp design, zero drag.">
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- Loading sequence -->
+<div class="loader" id="loader">
+  <div class="loader-mark">
+    <svg viewBox="0 0 120 80" class="loader-svg">
+      <polyline class="loader-path" points="10,60 40,20 70,60 100,20" />
+    </svg>
+  </div>
+  <div class="loader-label"><span>INITIALIZING</span><span class="loader-dots">...</span></div>
+</div>
+
+<div class="noise-overlay" aria-hidden="true"></div>
+<div class="scanline" aria-hidden="true"></div>
+
+<!-- Nav -->
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a href="#top" class="brand">
+      <img src="assets/logo.png" alt="Streight Digital Solutions" class="brand-mark">
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <a href="#services" data-label="Services"><span>01</span> Services</a>
+      <a href="#process" data-label="Process"><span>02</span> Process</a>
+      <a href="#work" data-label="Work"><span>03</span> Work</a>
+      <a href="#about" data-label="About"><span>04</span> About</a>
+      <a href="#contact" class="nav-cta">Start a Project</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <canvas id="heroCanvas" class="hero-canvas"></canvas>
+    <div class="hero-grid" aria-hidden="true"></div>
+    <div class="hero-content">
+      <div class="eyebrow"><span class="eyebrow-dash"></span>WEB DEVELOPMENT &amp; DIGITAL ENGINEERING</div>
+      <h1 class="hero-title">
+        <span class="hero-title-line">WE BUILD THE WEB</span>
+        <span class="hero-title-line hero-title-accent">AT FULL THROTTLE</span>
+      </h1>
+      <p class="hero-sub">Streight Digital Solutions designs and ships fast, resilient websites and web applications for teams who don't have patience for slow, generic builds.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary"><span>Start a Project</span></a>
+        <a href="#work" class="btn btn-ghost"><span>View Our Work</span></a>
+      </div>
+    </div>
+    <div class="hero-scroll" aria-hidden="true">
+      <span>SCROLL</span>
+      <div class="hero-scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- TICKER -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span>FRONTEND ENGINEERING</span><span class="ticker-sep">◆</span>
+      <span>API INTEGRATION</span><span class="ticker-sep">◆</span>
+      <span>CLOUD DEPLOYMENT</span><span class="ticker-sep">◆</span>
+      <span>PERFORMANCE TUNING</span><span class="ticker-sep">◆</span>
+      <span>UI / UX DESIGN</span><span class="ticker-sep">◆</span>
+      <span>E-COMMERCE SYSTEMS</span><span class="ticker-sep">◆</span>
+      <span>FRONTEND ENGINEERING</span><span class="ticker-sep">◆</span>
+      <span>API INTEGRATION</span><span class="ticker-sep">◆</span>
+      <span>CLOUD DEPLOYMENT</span><span class="ticker-sep">◆</span>
+      <span>PERFORMANCE TUNING</span><span class="ticker-sep">◆</span>
+      <span>UI / UX DESIGN</span><span class="ticker-sep">◆</span>
+      <span>E-COMMERCE SYSTEMS</span><span class="ticker-sep">◆</span>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section class="section services" id="services">
+    <div class="section-head">
+      <div class="eyebrow"><span class="eyebrow-dash"></span>CAPABILITIES</div>
+      <h2 class="section-title">Built for speed.<br>Engineered to last.</h2>
+    </div>
+    <div class="services-grid">
+      <article class="service-card">
+        <div class="service-index">01</div>
+        <h3>Custom Web Development</h3>
+        <p>Hand-built sites and applications on modern frameworks — no bloated page-builders, no dead weight. Just clean code that loads fast and scales.</p>
+        <div class="service-tags"><span>React</span><span>Next.js</span><span>Node</span></div>
+      </article>
+      <article class="service-card">
+        <div class="service-index">02</div>
+        <h3>UI / UX Design Systems</h3>
+        <p>Interfaces designed around how people actually use your product, backed by a component system your team can extend without breaking.</p>
+        <div class="service-tags"><span>Figma</span><span>Design Tokens</span><span>A11y</span></div>
+      </article>
+      <article class="service-card">
+        <div class="service-index">03</div>
+        <h3>API &amp; Systems Integration</h3>
+        <p>We connect your site to the tools that run your business — payments, CRMs, inventory, auth — cleanly, securely, and documented.</p>
+        <div class="service-tags"><span>REST</span><span>GraphQL</span><span>Webhooks</span></div>
+      </article>
+      <article class="service-card">
+        <div class="service-index">04</div>
+        <h3>Performance &amp; Hosting</h3>
+        <p>Sub-second load times, tuned Core Web Vitals, and deployment pipelines that ship changes without downtime.</p>
+        <div class="service-tags"><span>Edge CDN</span><span>CI / CD</span><span>Monitoring</span></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="section process" id="process">
+    <div class="section-head">
+      <div class="eyebrow"><span class="eyebrow-dash"></span>HOW WE WORK</div>
+      <h2 class="section-title">Four stages.<br>No detours.</h2>
+    </div>
+    <div class="process-track">
+      <div class="process-line" aria-hidden="true"></div>
+      <div class="process-step">
+        <div class="process-num">01</div>
+        <h3>Discover</h3>
+        <p>We map your goals, users, and constraints before a single pixel gets placed.</p>
+      </div>
+      <div class="process-step">
+        <div class="process-num">02</div>
+        <h3>Design</h3>
+        <p>Wireframes and high-fidelity comps, reviewed with you at every checkpoint.</p>
+      </div>
+      <div class="process-step">
+        <div class="process-num">03</div>
+        <h3>Build</h3>
+        <p>Production code, written to your spec, tested against real devices and traffic.</p>
+      </div>
+      <div class="process-step">
+        <div class="process-num">04</div>
+        <h3>Launch &amp; Support</h3>
+        <p>We ship it, monitor it, and stay on to iterate as your product grows.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats" id="stats">
+    <div class="stat">
+      <div class="stat-num" data-count="120">0</div>
+      <div class="stat-label">Projects Shipped</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num" data-count="98" data-suffix="%">0</div>
+      <div class="stat-label">Client Retention</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num" data-count="40" data-prefix="&lt;">0</div>
+      <div class="stat-label">Avg. Load Time (ms×10)</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num" data-count="24" data-suffix="/7">0</div>
+      <div class="stat-label">Uptime Monitoring</div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section class="section work" id="work">
+    <div class="section-head">
+      <div class="eyebrow"><span class="eyebrow-dash"></span>SELECTED WORK</div>
+      <h2 class="section-title">Recent deployments.</h2>
+    </div>
+    <div class="work-grid">
+      <article class="work-card">
+        <div class="work-media" style="--tint:#1046d8;"></div>
+        <div class="work-meta">
+          <h3>Vantage Logistics Platform</h3>
+          <p>Real-time fleet dashboard with live GPS tracking and route optimization.</p>
+          <div class="service-tags"><span>Next.js</span><span>WebSockets</span></div>
+        </div>
+      </article>
+      <article class="work-card">
+        <div class="work-media" style="--tint:#2f7dff;"></div>
+        <div class="work-meta">
+          <h3>Northline Outfitters</h3>
+          <p>Headless e-commerce rebuild, cutting checkout time by 40%.</p>
+          <div class="service-tags"><span>Shopify Hydrogen</span><span>Edge</span></div>
+        </div>
+      </article>
+      <article class="work-card">
+        <div class="work-media" style="--tint:#4fe0ff;"></div>
+        <div class="work-meta">
+          <h3>Cascade Health Portal</h3>
+          <p>HIPAA-conscious patient portal with secure document handling.</p>
+          <div class="service-tags"><span>React</span><span>OAuth2</span></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section about" id="about">
+    <div class="about-grid">
+      <div class="about-copy">
+        <div class="eyebrow"><span class="eyebrow-dash"></span>WHO WE ARE</div>
+        <h2 class="section-title">A small studio that moves like a bigger one.</h2>
+        <p>Streight Digital Solutions is a lean team of engineers and designers who believe the web should feel instant and look intentional. We skip the templated agency playbook — every build starts from your actual product, not a theme.</p>
+        <p>No account managers relaying messages. You work directly with the people writing the code.</p>
+      </div>
+      <div class="about-panel">
+        <div class="about-panel-row"><span>Founded</span><strong>2024</strong></div>
+        <div class="about-panel-row"><span>Based</span><strong>Remote-first</strong></div>
+        <div class="about-panel-row"><span>Team</span><strong>Engineers &amp; Designers</strong></div>
+        <div class="about-panel-row"><span>Stack</span><strong>Modern &amp; Modular</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact">
+    <div class="contact-panel">
+      <div class="eyebrow"><span class="eyebrow-dash"></span>GET IN TOUCH</div>
+      <h2 class="section-title">Let's build something that moves.</h2>
+      <p class="contact-sub">Tell us what you're building. We'll follow up within one business day.</p>
+      <form class="contact-form" id="contactForm">
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required placeholder="Your name">
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required placeholder="you@company.com">
+        </div>
+        <div class="form-row">
+          <label for="message">Project details</label>
+          <textarea id="message" name="message" rows="4" required placeholder="What are you building?"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block"><span>Send Message</span></button>
+        <p class="form-status" id="formStatus" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <img src="assets/logo.png" alt="Streight Digital Solutions" class="footer-mark">
+    <div class="footer-links">
+      <a href="#services">Services</a>
+      <a href="#process">Process</a>
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="footer-meta">© <span id="year"></span> Streight Digital Solutions. All rights reserved.</div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
