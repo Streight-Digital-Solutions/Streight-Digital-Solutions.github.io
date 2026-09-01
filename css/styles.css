@@ -231,7 +231,7 @@ button{ font-family:inherit; cursor:pointer; }
 .ticker-track{
   display:flex; gap:28px; white-space:nowrap; width:max-content;
   font-family:var(--font-mono); font-size:13px; letter-spacing:0.12em; color:var(--muted);
-  animation:tickerMove 5s linear infinite;
+  animation:tickerMove 20s linear infinite;
 }
 .ticker-sep{ color:var(--cyan); }
 @keyframes tickerMove{ from{ transform:translateX(0); } to{ transform:translateX(-50%); } }
