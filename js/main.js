@@ -107,7 +107,7 @@
       }
 
       const accessKey = form.access_key ? form.access_key.value : '';
-      if (!accessKey || accessKey === '6cf0bab0-63af-440b-8d58-7506057a34f2') {
+      if (!accessKey){
         status.classList.add('is-error');
         status.textContent = 'Form isn\u2019t connected yet — add a Web3Forms access key in index.html.';
         return;
