@@ -113,7 +113,7 @@ button{ font-family:inherit; cursor:pointer; }
 .header-inner{
   width:100%; display:flex; align-items:center; justify-content:space-between;
 }
-.brand-mark{ height:38px; width:auto; }
+.brand-mark{ height:120px; width:auto; }
 
 .main-nav{ display:flex; align-items:center; gap:clamp(18px,2.4vw,36px); }
 .main-nav a{
