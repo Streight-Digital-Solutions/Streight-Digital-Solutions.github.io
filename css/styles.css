@@ -311,6 +311,7 @@ button{ font-family:inherit; cursor:pointer; }
 .work-media{
   height:190px;
   background:
+    image(var(--work-media)) center/cover no-repeat,
     repeating-linear-gradient(115deg, transparent 0 18px, rgba(255,255,255,0.03) 18px 19px),
     linear-gradient(140deg, var(--tint,#2f7dff) 0%, #060a14 85%);
   position:relative;
