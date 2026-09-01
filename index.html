@@ -217,13 +217,19 @@
     </div>
   </section>
 
-  <!-- CONTACT -->
+<!-- CONTACT -->
   <section class="section contact" id="contact">
     <div class="contact-panel">
       <div class="eyebrow"><span class="eyebrow-dash"></span>GET IN TOUCH</div>
       <h2 class="section-title">Let's build something that inspires.</h2>
       <p class="contact-sub">Tell us what you're building. We'll follow up within one business day.</p>
       <form class="contact-form" id="contactForm">
+        <!-- Get this at web3forms.com — click "Create Access Key", enter your business email, paste the key below. -->
+        <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY_HERE">
+        <input type="hidden" name="subject" value="New project inquiry — streightdigital.ca">
+        <input type="hidden" name="from_name" value="Streight Digital Solutions website">
+        <!-- Honeypot spam trap: left blank by humans, auto-filled by most bots. Keep it in the form. -->
+        <input type="checkbox" name="botcheck" class="hidden-field" tabindex="-1" autocomplete="off">
         <div class="form-row">
           <label for="name">Name</label>
           <input type="text" id="name" name="name" required placeholder="Your name">
