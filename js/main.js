@@ -84,16 +84,66 @@
     ticker.addEventListener('mouseleave', () => tickerTrack.style.animationPlayState = 'running');
   }
 
-  /* ---------------------------------------------------------
-     Contact form (static-site friendly stub)
+    /* ---------------------------------------------------------
+     Contact form — submits to Web3Forms (no backend needed).
+     Get an access key at web3forms.com and paste it into the
+     hidden "access_key" input in index.html.
   --------------------------------------------------------- */
   const form = document.getElementById('contactForm');
   const status = document.getElementById('formStatus');
   if (form) {
-    form.addEventListener('submit', (e) => {
+    const submitBtn = form.querySelector('button[type="submit"]');
+    const submitLabel = submitBtn ? submitBtn.querySelector('span') : null;
+
+    form.addEventListener('submit', async (e) => {
       e.preventDefault();
-      status.textContent = 'Message received. We\u2019ll be in touch shortly.';
-      form.reset();
+
+      // Honeypot: if this got checked/filled, silently drop it like a success.
+      if (form.botcheck && form.botcheck.checked) {
+        status.classList.remove('is-error');
+        status.textContent = 'Message received. We\u2019ll be in touch shortly.';
+        form.reset();
+        return;
+      }
+
+      const accessKey = form.access_key ? form.access_key.value : '';
+      if (!accessKey || accessKey === '6cf0bab0-63af-440b-8d58-7506057a34f2') {
+        status.classList.add('is-error');
+        status.textContent = 'Form isn\u2019t connected yet — add a Web3Forms access key in index.html.';
+        return;
+      }
+
+      status.classList.remove('is-error');
+      status.textContent = 'Sending\u2026';
+      if (submitBtn) submitBtn.disabled = true;
+      if (submitLabel) submitLabel.textContent = 'Sending...';
+
+      try {
+        const formData = new FormData(form);
+        const payload = Object.fromEntries(formData.entries());
+        delete payload.botcheck;
+
+        const res = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+          body: JSON.stringify(payload),
+        });
+        const result = await res.json();
+
+        if (res.ok && result.success) {
+          status.textContent = 'Message received. We\u2019ll be in touch shortly.';
+          form.reset();
+        } else {
+          status.classList.add('is-error');
+          status.textContent = 'Something went wrong sending that — please try again.';
+        }
+      } catch (err) {
+        status.classList.add('is-error');
+        status.textContent = 'Network error — please try again in a moment.';
+      } finally {
+        if (submitBtn) submitBtn.disabled = false;
+        if (submitLabel) submitLabel.textContent = 'Send Message';
+      }
     });
   }
 
