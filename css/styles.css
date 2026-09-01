@@ -117,7 +117,7 @@ button{ font-family:inherit; cursor:pointer; }
 
 .main-nav{ display:flex; align-items:center; gap:clamp(18px,2.4vw,36px); }
 .main-nav a{
-  font-family:var(--font-mono); font-size:12px; letter-spacing:0.08em; color:var(--muted);
+  font-family:var(--font-mono); font-size:14px; letter-spacing:0.08em; color:var(--muted);
   display:flex; align-items:center; gap:6px; transition:color .25s var(--ease);
   position:relative; padding:4px 2px;
 }
@@ -231,7 +231,7 @@ button{ font-family:inherit; cursor:pointer; }
 .ticker-track{
   display:flex; gap:28px; white-space:nowrap; width:max-content;
   font-family:var(--font-mono); font-size:13px; letter-spacing:0.12em; color:var(--muted);
-  animation:tickerMove 32s linear infinite;
+  animation:tickerMove 5s linear infinite;
 }
 .ticker-sep{ color:var(--cyan); }
 @keyframes tickerMove{ from{ transform:translateX(0); } to{ transform:translateX(-50%); } }
