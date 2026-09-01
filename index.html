@@ -244,6 +244,10 @@
         </div>
         <button type="submit" class="btn btn-primary btn-block"><span>Send Message</span></button>
         <p class="form-status" id="formStatus" role="status"></p>
+        
+        <!-- Step 1: Add this line -->
+        <div class="h-captcha" data-captcha="true"></div>
+
       </form>
     </div>
   </section>
@@ -266,5 +270,7 @@
 </footer>
 
 <script src="js/main.js"></script>
+<!-- Step 2: Add the Web3Forms script -->
+<script src="https://web3forms.com/client/script.js" async defer></script>
 </body>
 </html>
