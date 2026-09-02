@@ -1,0 +1,114 @@
+/* ==========================================================================
+   STREIGHT DIGITAL SOLUTIONS — Pricing page
+   Extends design tokens from styles.css. Load styles.css first.
+   ========================================================================== */
+
+.main-nav a.is-current{ color:var(--cyan); }
+
+/* ---------------------------------------------------------------
+   Pricing hero
+   --------------------------------------------------------------- */
+.pricing-hero{
+  padding:150px clamp(20px,6vw,80px) 30px;
+  text-align:center;
+}
+.pricing-hero .eyebrow{ justify-content:center; }
+.pricing-hero .section-title{ margin:14px auto 18px; }
+.pricing-hero-sub{
+  color:var(--muted); max-width:560px; margin:0 auto; font-size:16px;
+}
+
+/* ---------------------------------------------------------------
+   Pricing grid + glowing cards
+   --------------------------------------------------------------- */
+.pricing-grid{
+  display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
+  gap:28px; padding:70px clamp(20px,6vw,80px) 20px; max-width:1240px; margin:0 auto;
+  align-items:start;
+}
+
+.pricing-card{
+  position:relative; isolation:isolate; overflow:hidden;
+  background:var(--panel); border:1px solid var(--border-bright);
+  padding:42px 32px 36px; display:flex; flex-direction:column;
+  clip-path:polygon(18px 0,100% 0,100% calc(100% - 18px),calc(100% - 18px) 100%,0 100%,0 18px);
+  transition:transform .3s var(--ease), border-color .3s var(--ease);
+}
+.pricing-card:hover{ transform:translateY(-6px); border-color:var(--border-bright); }
+
+/* the glow */
+.pricing-card::before{
+  content:''; position:absolute; z-index:-1; top:-90px; left:50%; translate:-50% 0;
+  width:340px; height:220px; border-radius:50%;
+  background:radial-gradient(closest-side, rgba(79,224,255,0.32), rgba(47,125,255,0.16) 55%, transparent 80%);
+  filter:blur(38px); opacity:0.75; pointer-events:none;
+  transition:opacity .3s var(--ease);
+}
+.pricing-card:hover::before{ opacity:1; }
+
+.pricing-card--featured{
+  border-color:var(--cyan); background:var(--panel-2);
+  box-shadow:0 0 0 1px rgba(79,224,255,0.25), 0 30px 70px -30px rgba(79,224,255,0.35);
+}
+.pricing-card--featured::before{
+  width:420px; height:280px; opacity:0.95;
+  background:radial-gradient(closest-side, rgba(79,224,255,0.5), rgba(47,125,255,0.22) 55%, transparent 80%);
+}
+
+.pricing-badge{
+  position:absolute; top:18px; right:-38px; transform:rotate(45deg);
+  background:var(--cyan); color:var(--bg); font-family:var(--font-mono); font-size:10.5px;
+  letter-spacing:0.12em; text-transform:uppercase; padding:5px 44px; font-weight:600;
+}
+
+.pricing-tier-index{ font-family:var(--font-mono); font-size:12px; color:var(--muted-dim); margin-bottom:16px; }
+.pricing-tier-name{
+  font-family:var(--font-display); font-size:24px; text-transform:uppercase; letter-spacing:0.01em;
+  margin-bottom:6px; color:var(--white);
+}
+.pricing-tier-desc{ color:var(--muted); font-size:13.5px; margin-bottom:22px; min-height:20px; }
+
+.pricing-price{ display:flex; align-items:baseline; gap:6px; margin-bottom:28px; }
+.pricing-price-amount{
+  font-family:var(--font-display); font-weight:700; font-size:44px; letter-spacing:0.01em;
+  background:linear-gradient(100deg, var(--blue) 10%, var(--cyan) 70%);
+  -webkit-background-clip:text; background-clip:text; color:transparent;
+}
+.pricing-price-unit{ font-family:var(--font-mono); font-size:12.5px; color:var(--muted-dim); text-transform:uppercase; }
+
+.pricing-features{ list-style:none; margin:0 0 32px; padding:0; flex:1; }
+.pricing-features li{
+  display:flex; align-items:flex-start; gap:10px; color:var(--muted); font-size:14.5px;
+  padding:10px 0; border-top:1px solid var(--border);
+}
+.pricing-features li:first-child{ border-top:none; }
+.pricing-features li::before{
+  content:'\2713'; color:var(--cyan); font-family:var(--font-mono); font-size:12px; margin-top:2px;
+  text-shadow:0 0 8px rgba(79,224,255,0.6);
+}
+
+.pricing-card .btn{ width:100%; }
+
+/* ---------------------------------------------------------------
+   Add-ons
+   --------------------------------------------------------------- */
+.addons-wrap{ padding:20px clamp(20px,6vw,80px) 40px; max-width:1240px; margin:0 auto; }
+.addons-grid{
+  display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:1px;
+  background:var(--border); border:1px solid var(--border);
+}
+.addon-card{
+  background:var(--panel); padding:26px 28px; display:flex; align-items:center; justify-content:space-between; gap:16px;
+}
+.addon-name{ font-family:var(--font-display); font-size:16px; text-transform:uppercase; color:var(--white); letter-spacing:0.01em; }
+.addon-price{ font-family:var(--font-mono); color:var(--cyan); font-size:16px; white-space:nowrap; }
+
+.pricing-footnote{
+  max-width:700px; margin:36px auto 0; text-align:center; padding:0 20px;
+  font-family:var(--font-mono); font-size:12px; letter-spacing:0.03em; color:var(--muted-dim); line-height:1.7;
+}
+
+.pricing-cta-band{
+  text-align:center; padding:60px clamp(20px,6vw,80px) 140px;
+}
+.pricing-cta-band p{ color:var(--muted); margin-bottom:24px; }
