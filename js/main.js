@@ -202,8 +202,8 @@
 
   function drawArrowGlow(time) {
     // Central emblem echo: a soft pulsing chevron/arrow, matching the logo's core shape.
-    const cx = w / 1.4 + (mouseX - 0.9) * 18;
-    const cy = h / 2 + (mouseY - 0.9) * 14;
+    const cx = w / 1.9 + (mouseX - 0.9) * 18;
+    const cy = h / 1.6 + (mouseY - 0.9) * 14;
     const pulse = 0.5 + Math.sin(time / 900) * 0.5;
     const size = Math.min(w, h) * 0.16;
 
