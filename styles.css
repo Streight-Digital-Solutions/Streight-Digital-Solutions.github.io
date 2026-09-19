@@ -84,9 +84,12 @@ img.logo {
 
 /*Screens */
 @media screen and (max-width: 800px) {
-  img.logo, .nav{
-    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  img.logo, .glowing-title{ 
+    width: 50%; /* The width is 100%, when the viewport is 800px or smaller */
     height: auto;
+  }
+  .nav{
+    width:100%;
   }
 }
 
