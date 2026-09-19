@@ -1,4 +1,4 @@
-body {
+.hero {
     color: #0b3a52;
     display: flex;
     justify-content: center;
@@ -6,35 +6,6 @@ body {
 
 }
 
-/* Add a black background color to the top navigation */
-nav {
-  background-color: #333;
-  padding: 20px;
-}
-
-/* Style the links inside the navigation bar */
-nav a {
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 24px;
-  font-family: "Orbitron", sans-serif;
-  z-index: 3;
-}
-
-/* Change the color of links on hover */
-nav a:hover {
-  background-image: linear-gradient(to right,#00ffff,#000000);
-  color: black;
-}
-
-/* Add a color to the active/current link */
-nav a.active {
-  background-image: linear-gradient(to right,#00ffff,#000000);
-  color: white;
-}
 .background-video {
     position: fixed;
     z-index: -1;
@@ -48,7 +19,50 @@ img.logo {
     z-index: 2;
     filter: drop-shadow(0 0 0.75rem #00ffff);
 }
+.branding {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+/*---------------------------------------------NAVIGATION---------------------------------------------------------*/
+nav {
+  background-color: #333;
+  padding: 20px;
+}
+nav a {
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 24px;
+  font-family: "Orbitron", sans-serif;
+  z-index: 3;
+}
+nav a:hover {
+  background-image: linear-gradient(to right,#00ffff,#000000);
+  color: black;
+}
+nav a.active {
+  background-image: linear-gradient(to right,#00ffff,#000000);
+  color: white;
+}
+
+/*-------------------------------------------------------------------------------------------------------------- */
+
+
+/*---------------------------------------------TITLES---------------------------------------------------------*/
 .title {
+    display: block;
+    color: #64d0eb;
+    font-family: "Orbitron", sans-serif;
+    font-size: 100px;
+    z-index: 2;
+    font-size: 80px;
+    text-align: center;
+}
+.subtitle {
     display: block;
     color: #64d0eb;
     font-family: "Orbitron", sans-serif;
@@ -56,11 +70,6 @@ img.logo {
     z-index: 2;
 }
 
-.branding {
-    position: relative;
-    align-items: center;
-    justify-content: center;
-}
 .glowing-title {
     display: block;
     color: #64d0eb;
@@ -81,6 +90,81 @@ img.logo {
     text-align: center;
     animation: glow 1s ease-in-out infinite alternate;
 }
+/*-------------------------------------------------------------------------------------------------------------- */
+
+
+/*---------------------------------------------Buttons---------------------------------------------------------*/
+.action-button {
+    height: 20px;
+    width:100px;
+    background-color: #000000;
+    color: #00ffff;
+}
+
+.action-button:hover {
+    height: 20px;
+    width:100px;
+    background-color: #00ffff;
+}
+/*-------------------------------------------------------------------------------------------------------------- */
+
+/*------------------------------------------------CARDS----------------------------------------------------------*/
+.cards {
+  max-width: 100%;
+  margin: 100px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  grid-gap: 20px;
+}
+
+.card {
+  border: 1px solid  #00ffff;
+  border-radius: 3px;
+  background-color: #00ffff17;
+  display: grid;
+  grid-template-rows: max-content 200px 1fr;
+}
+
+.card img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.card-title {
+    display: block;
+    color: #64d0eb;
+    font-family: "Orbitron", sans-serif;
+    font-size: 70px;
+    z-index: 2;
+    text-align: center;
+}
+li{
+    list-style-type: none;
+    color: #64d0eb;
+    font-family: "Orbitron", sans-serif;
+}
+
+.card .content {
+  padding: 0.5rem;
+}
+.card-price {
+    color: linear-gradient(to right,#00ffff,#000000);
+    font-family: "Orbitron", sans-serif;
+}
+
+.card footer {
+  background-color: #333333;
+  color: white;
+  padding: 0.5rem;
+}
+/*-------------------------------------------------------------------------------------------------------------- */
+
+section{
+    height:auto;
+    padding-top: 0;
+
+}
 
 /*Screens */
 @media screen and (max-width: 800px) {
@@ -96,6 +180,8 @@ img.logo {
     width:100%;
   }
 }
+/*-------------------------------------------------------------------------------------------------------------- */
+
 
 /*Animations*/
 @keyframes glow {
