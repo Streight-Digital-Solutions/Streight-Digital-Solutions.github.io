@@ -26,13 +26,13 @@ nav a {
 
 /* Change the color of links on hover */
 nav a:hover {
-  background-color: #ddd;
+  background-image: linear-gradient(to right,#00ffff,#000000);
   color: black;
 }
 
 /* Add a color to the active/current link */
 nav a.active {
-  background-color: #055967;
+  background-image: linear-gradient(to right,#00ffff,#000000);
   color: white;
 }
 .background-video {
