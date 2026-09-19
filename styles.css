@@ -111,7 +111,7 @@ nav a.active {
 /*------------------------------------------------CARDS----------------------------------------------------------*/
 .cards {
   max-width: 100%;
-  margin: 100px auto;
+  margin: 1px auto;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
   grid-gap: 20px;
@@ -161,6 +161,7 @@ li{
 /*-------------------------------------------------------------------------------------------------------------- */
 
 section{
+    margin-top: 200px;
     height:auto;
     padding-top: 0;
 
@@ -172,9 +173,11 @@ section{
     width: 50%;
     height: 50%;
   } 
-  .glowing-title,.glowing-title:hover,.card-title{ 
-    font-size: 100%;
-    height: auto;
+  .glowing-title,.glowing-title:hover,.title{ 
+    font-size: 300%;
+  }
+  .card-title{
+    font-size: 200%;
   }
   .nav{
     width:100%;
@@ -185,9 +188,11 @@ section{
     width: 50%;
     height: 50%;
   } 
-  .glowing-title,.glowing-title:hover,.card-title{ 
+  .glowing-title,.glowing-title:hover,.title{ 
+    font-size: 200%;
+  }
+  .card-title{
     font-size: 100%;
-    height: auto;
   }
   .nav{
     width:100%;
@@ -198,9 +203,11 @@ section{
     width: 50%;
     height: 50%;
   } 
-  .glowing-title,.glowing-title:hover,.card-title{ 
+  .glowing-title,.glowing-title:hover,.title{ 
+    font-size: 200%;
+  }
+  .card-title{
     font-size: 100%;
-    height: auto;
   }
   .nav{
     width:100%;
@@ -211,9 +218,11 @@ section{
     width: 50%;
     height: 50%;
   } 
-  .glowing-title,.glowing-title:hover,.card-title{ 
+  .glowing-title,.glowing-title:hover,.title{ 
+    font-size: 200%;
+  }
+  .card-title{
     font-size: 100%;
-    height: auto;
   }
   .nav{
     width:100%;
