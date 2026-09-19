@@ -81,6 +81,13 @@ img.logo {
     text-align: center;
     animation: glow 1s ease-in-out infinite alternate;
 }
+/* Use a media query to add a breakpoint at 800px: */
+@media screen and (max-width: 800px) {
+  img.logo, .nav{
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    height: auto;
+  }
+}
 
 @keyframes glow {
   from {
