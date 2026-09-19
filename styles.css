@@ -27,7 +27,9 @@ img.logo {
 
 /*---------------------------------------------NAVIGATION---------------------------------------------------------*/
 nav {
-  background-color: #333;
+  background-color: #3333336b;
+  border-color: #00ffff;
+  border-width: 2px;
   padding: 20px;
 }
 nav a {
@@ -41,11 +43,11 @@ nav a {
   z-index: 3;
 }
 nav a:hover {
-  background-image: linear-gradient(to right,#00ffff,#000000);
+  background-image: linear-gradient(to right,#00ffff65,#00000053);
   color: black;
 }
 nav a.active {
-  background-image: linear-gradient(to right,#00ffff,#000000);
+  background-image: linear-gradient(to right,#00ffff6c,#00000044);
   color: white;
 }
 
@@ -94,17 +96,31 @@ nav a.active {
 
 
 /*---------------------------------------------Buttons---------------------------------------------------------*/
+
+
+.terms-buttons{
+  justify-content: center;
+  display: flex;
+}
+
 .action-button {
-    height: 20px;
-    width:100px;
-    background-color: #000000;
+    height: 50px;
+    width:150px;
+    margin:10px;
+    padding: 10px;
+    background-color: #00000088;
     color: #00ffff;
+    border-radius: 5px;
+    border-color: #00ffff;
+    font-size: 20px;
+    font-family: "Orbitron", sans-serif;
 }
 
 .action-button:hover {
     height: 20px;
     width:100px;
     background-color: #00ffff;
+    color: #000000;
 }
 /*-------------------------------------------------------------------------------------------------------------- */
 
