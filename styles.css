@@ -99,8 +99,10 @@ nav a.active {
 
 
 .terms-buttons{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20%, 2px));
+  grid-gap: 2px;
   justify-content: center;
-  display: flex;
 }
 
 .action-button {
@@ -201,8 +203,11 @@ section{
   .card-title{
     font-size: 200%;
   }
-  .nav{
+  .nav,.terms-buttons,.action-button,.action-button:hover{
     width:100%;
+  }
+  .action-button,.action-button:hover{
+    font-size: 70%;
   }
 }
 @media screen and (max-width: 1080px) {
@@ -216,8 +221,11 @@ section{
   .card-title{
     font-size: 100%;
   }
-  .nav{
+  .nav,.terms-buttons,.action-button,.action-button:hover{
     width:100%;
+  }
+  .action-button,.action-button:hover{
+    font-size: 70%;
   }
 }
 @media screen and (max-width: 800px) {
@@ -231,8 +239,11 @@ section{
   .card-title{
     font-size: 100%;
   }
-  .nav{
+  .nav,.terms-buttons,.action-button,.action-button:hover{
     width:100%;
+  }
+  .action-button,.action-button:hover{
+    font-size: 70%;
   }
 }
 @media screen and (max-width: 600px) {
@@ -246,8 +257,11 @@ section{
   .card-title{
     font-size: 100%;
   }
-  .nav{
+  .nav,.terms-buttons,.action-button,.action-button:hover{
     width:100%;
+  }
+  .action-button,.action-button:hover{
+    font-size: 70%;
   }
 }
 /*-------------------------------------------------------------------------------------------------------------- */
