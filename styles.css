@@ -84,8 +84,12 @@ img.logo {
 
 /*Screens */
 @media screen and (max-width: 800px) {
-  img.logo, .glowing-title{ 
-    width: 50%; /* The width is 100%, when the viewport is 800px or smaller */
+  img.logo{
+    width: 50%;
+    height: 50%;
+  } 
+  .glowing-title,.glowing-title:hover{ 
+    font-size: 40px;
     height: auto;
   }
   .nav{
