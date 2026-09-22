@@ -66,6 +66,9 @@ nav a.active {
 a{
   text-decoration: none;
   color: #64d0eb;
+  &:hover{
+    color: #000000;
+  }
 }
 h1{
   margin: 0;
@@ -183,6 +186,9 @@ h1{
     border-color: #00ffff;
     font-size: 20px;
     font-family: "Orbitron", sans-serif;
+    a {
+      color: #000000;
+    }
 }
 /*-------------------------------------------------------------------------------------------------------------- */
 
