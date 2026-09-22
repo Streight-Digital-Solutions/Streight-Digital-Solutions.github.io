@@ -41,46 +41,18 @@
                 <source src="videos/backgroundvideo.mp4" type="video/mp4">
             </video>
         </div>
-        <section id="pricing">
-            <h1 class="title">Pricing</h1>
-            <div class="cards">
-                <article class="card" id="card">
-                    <h1 class="card-title">BASIC</h1>
-                    <ul class="card-description">
-                        <li>Free Hosting</li>
-                        <li>Paid Domain (optional)</li>
-                        <li>Maximum 5 Pages</li>
-                        <li>1 Contact Form</li>
-                        <li>1 Revision Round</li>
-                    </ul>
-                    <h1 class="card-price1">$</h1>
-                </article>
-                <script>
-
-                </script>
-                <article class="card" id="card">
-                    <h1 class="card-title">BUSINESS</h1>
-                    <ul>
-                        <li>Paid Hosting</li>
-                        <li>Paid Domain (optional)</li>
-                        <li>5-10 Pages</li>
-                        <li>2-5 Business Forms</li>
-                        <li>2 Revision Rounds</li>
-                    </ul>
-                    <h1 class="card-price2">$</h1>>
-                </article>
-                <article class="card">
-                    <h1 class="card-title">PROFESSIONAL</h1>
-                    <ul>
-                        <li>Paid Hosting</li>
-                        <li>CMS</li>
-                        <li>Database Integrations</li>
-                        <li>10-15 Pages</li>
-                        <li>3 Revision Rounds</li>
-                    </ul>
-                    <h1 class="card-price3">$</h1>>
-                </article>
-            </div>
+        <section class= "contact-form" id="contact-form">
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="6cf0bab0-63af-440b-8d58-7506057a34f2">
+                <h1 class="form-headings">Name</h1>
+                <input class="name" type="text" name="name" required>
+                <h1 class="form-headings">Email</h1>
+                <input class="email" type="email" name="email" required>
+                <h1 class="form-headings">What would you like to build?</h1>
+                <textarea class="message" name="message" required></textarea>
+                <br>
+                <button class="submit-button" type="submit">Submit Form</button>
+            </form>
         </section>
         <footer>
             <p class="copyright">© Streight Digital Solutions. All rights reserved.</p>

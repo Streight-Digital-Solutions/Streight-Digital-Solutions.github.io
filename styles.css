@@ -69,7 +69,8 @@ a{
 }
 h1{
   margin: 0;
-  
+  color: #64d0eb;
+  font-family: "Orbitron", sans-serif;
 }
 .title {
     display: block;
@@ -79,6 +80,7 @@ h1{
     z-index: 2;
     font-size: 80px;
     text-align: center;
+    margin-bottom: 50px;
 }
 .subtitle {
     padding-left: 50px;
@@ -339,7 +341,7 @@ li{
 /*-------------------------------------------------------------------------------------------------------------- */
 
 section{
-    margin-top: 100px;
+    margin-top: 50px;
     height:auto;
     padding-top: 0;
 
@@ -363,6 +365,25 @@ section{
 }
 
 /*----------------MEDIA------------------------------------------------------*/
+@media screen and (max-width: 2200px) {
+  img.logo{
+    width: 50%;
+    height: 50%;
+  } 
+  .glowing-title,.glowing-title:hover,.title{ 
+    font-size: 300%;
+  }
+  .card-title{
+    font-size: 250%;
+  }
+  .nav,.terms-buttons,.action-button,.action-button:hover{
+    width:100%;
+    font-size: 30px;
+  }
+  .action-button,.action-button:hover{
+    font-size: 70%;
+  }
+}
 @media screen and (max-width: 1500px) {
   img.logo{
     width: 50%;
@@ -372,7 +393,7 @@ section{
     font-size: 300%;
   }
   .card-title{
-    font-size: 200%;
+    font-size: 100%;
   }
   .nav,.terms-buttons,.action-button,.action-button:hover{
     width:100%;
@@ -387,7 +408,7 @@ section{
     height: 50%;
   } 
   .glowing-title,.glowing-title:hover,.title{ 
-    font-size: 200%;
+    font-size: 100%;
   }
   .card-title{
     font-size: 100%;
@@ -408,7 +429,7 @@ section{
     font-size: 200%;
   }
   .card-title{
-    font-size: 100%;
+    font-size: 80%;
   }
   .nav,.terms-buttons,.action-button,.action-button:hover{
     width:100%;
@@ -451,3 +472,27 @@ section{
   }
 }
 
+
+/*----------------FORMS------------------------------------------------------*/
+form{
+  text-align: center;
+  display: block;
+  justify-items: center;
+}
+.submit-button,
+input,textarea{
+  background-color: #00ffff75;
+  border-color: #00ffff;
+  font-size: 20px;
+  font-family: "Orbitron", sans-serif;
+  align-items: center;
+ 
+}
+textarea,input{
+  width:500px;
+}
+.form-headings{
+  margin: 20px;
+  color: #64d0eb;
+  font-family: "Orbitron", sans-serif;
+}
