@@ -1,5 +1,6 @@
 var card = document.getElementById("nav");
 card.addEventListener("mouseover", playMusic);
+card.addEventListener("click", playMusic);
 
 function playMusic(){
     var audio = new Audio("./audio/click.mp3");

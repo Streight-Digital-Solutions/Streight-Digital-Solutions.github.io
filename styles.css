@@ -533,6 +533,9 @@ section{
   .action-button,.action-button:hover{
     font-size: 70%;
   }
+  .web-cards {
+  grid-template-columns: repeat(auto-fill, minmax(30%, fr));
+  }
 }
 @media screen and (max-width: 600px) {
   img.logo{
@@ -551,6 +554,15 @@ section{
   }
   .action-button,.action-button:hover{
     font-size: 70%;
+  }
+  .web-cards {
+    max-width: 100%;
+    margin: 1px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(60%, 1fr));
+    justify-self: center;
+    align-self: center;
+    grid-gap: 0px;
   }
 }
 /*-------------------------------------------------------------------------------------------------------------- */
