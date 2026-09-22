@@ -1,3 +1,6 @@
+html{
+  scroll-behavior: smooth;
+}
 .hero {
     color: #0b3a52;
     display: flex;
@@ -10,6 +13,7 @@
     position: fixed;
     z-index: -1;
 }
+
 img.logo {
     display: block;
     margin: 20px auto;
@@ -18,7 +22,11 @@ img.logo {
     border-radius: 50%;
     z-index: 2;
     filter: drop-shadow(0 0 0.75rem #00ffff);
+  &:hover{
+    animation: glow 1s ease-in-out infinite alternate;
+  }
 }
+
 .branding {
     position: relative;
     align-items: center;
@@ -55,6 +63,14 @@ nav a.active {
 
 
 /*---------------------------------------------TITLES---------------------------------------------------------*/
+a{
+  text-decoration: none;
+  color: #64d0eb;
+}
+h1{
+  margin: 0;
+  
+}
 .title {
     display: block;
     color: #64d0eb;
@@ -65,13 +81,49 @@ nav a.active {
     text-align: center;
 }
 .subtitle {
+    padding-left: 50px;
     display: block;
     color: #64d0eb;
     font-family: "Orbitron", sans-serif;
-    font-size: 100px;
+    font-size: 50px;
     z-index: 2;
 }
-
+.term-title{
+    padding-left: 10px;
+    display: block;
+    color: #23464f;
+    font-family: "Orbitron", sans-serif;
+    font-size: 50px;
+    z-index: 2;
+}
+.term-description{
+    padding-left: 10px;
+    display: block;
+    color: #23464f;
+    font-family: "Orbitron", sans-serif;
+    font-size: 20px;
+    z-index: 2;
+}
+.term {
+    border-color: #101414;
+    border-width: 1px;
+    padding-left: 5px;
+    display: block;
+    color: #2f6370;
+    font-family: "Orbitron", sans-serif;
+    font-size: 50px;
+    z-index: 2;
+    background-color: #00ffffa3;
+    border-radius: 10px;
+}
+.p{
+    padding-left: 50px;
+    display: block;
+    color: #64d0eb;
+    font-family: "Orbitron", sans-serif;
+    font-size: 20px;
+    z-index: 2;
+}
 .glowing-title {
     display: block;
     color: #64d0eb;
@@ -106,8 +158,9 @@ nav a.active {
 }
 
 .action-button {
+    text-align: center;
     height: 50px;
-    width:150px;
+    width: 100%;
     margin:10px;
     padding: 10px;
     background-color: #00000088;
@@ -120,7 +173,7 @@ nav a.active {
 
 .action-button:hover {
     height: 50px;
-    width:150px;
+    width:100%;
     margin:10px;
     padding: 10px;
     background-color: #00ffff;
@@ -142,11 +195,19 @@ nav a.active {
 }
 
 .card {
-  border: 1px solid  #00ffff;
+  border: 5px solid  #00ffff;
   border-radius: 3px;
-  background-color: #00ffff17;
-  display: grid;
-  grid-template-rows: max-content 200px 1fr;
+  background-color: #00ffff83;
+  &:hover{
+    border: 5px solid  #09516d73;
+    background-color: #2b4046a4;
+    .card-title, .card-price1, .card-price2,.card-price3, .card-description{
+    background: -webkit-linear-gradient(#fcd913, #6d9006);
+    font-family: "Orbitron", sans-serif;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+  }
 }
 
 .card img {
@@ -157,41 +218,151 @@ nav a.active {
 
 .card-title {
     display: block;
-    color: #64d0eb;
+    color: #011f27;
     font-family: "Orbitron", sans-serif;
     font-size: 70px;
     z-index: 2;
     text-align: center;
 }
+
 li{
-    list-style-type: none;
-    color: #64d0eb;
-    font-family: "Orbitron", sans-serif;
+    color: #070909;
+    font-family: "Oxanium", sans-serif, bold;
+    font-size: 24px;
+    font-weight: 400;
 }
 
-.card .content {
-  padding: 0.5rem;
+@property --num1 {
+  syntax: "<integer>";
+  initial-value: 1200;
+  inherits: false;
 }
-.card-price {
-    color: linear-gradient(to right,#00ffff,#000000);
+.card-price1 {
+  animation: counter1 8s  alternate ease-in-out;
+  transition: --num1 1s;
+  counter-reset: none;
+  counter-reset: num var(--num1);
+  text-align: center;
+  font-size: 48px;
+  background: -webkit-linear-gradient(#000000, #023939);
+  font-family: "Orbitron", sans-serif;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  &:after{
+    content: counter(num);
+  }
+  &:hover{
+    background: -webkit-linear-gradient(#fcd913, #242f02);
     font-family: "Orbitron", sans-serif;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+@keyframes counter1 {
+  from {
+    --num1: 0;
+  }
+  to {
+    --num1: 1200;
+  }
 }
 
-.card footer {
-  background-color: #333333;
-  color: white;
-  padding: 0.5rem;
+@property --num2 {
+  syntax: "<integer>";
+  initial-value: 2000;
+  inherits: false;
+}
+.card-price2 {
+  animation: counter2 8s  alternate ease-in-out;
+  transition: --num2 1s;
+  counter-reset: none;
+  counter-reset: num var(--num2);
+  text-align: center;
+  font-size: 48px;
+  background: -webkit-linear-gradient(#000000, #023939);
+  font-family: "Orbitron", sans-serif;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  &:after{
+    content: counter(num);
+  }
+  &:hover{
+    background: -webkit-linear-gradient(#fcd913, #242f02);
+    font-family: "Orbitron", sans-serif;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+@keyframes counter2 {
+  from {
+    --num2: 0;
+  }
+  to {
+    --num2: 2000;
+  }
+}
+
+@property --num3 {
+  syntax: "<integer>";
+  initial-value: 5000;
+  inherits: false;
+}
+.card-price3 {
+  animation: counter3 8s  alternate ease-in-out;
+  transition: --num3 1s;
+  counter-reset: none;
+  counter-reset: num var(--num3);
+  text-align: center;
+  font-size: 48px;
+  background: -webkit-linear-gradient(#000000, #023939);
+  font-family: "Orbitron", sans-serif;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  &:after{
+    content: counter(num);
+  }
+  &:hover{
+    background: -webkit-linear-gradient(#fcd913, #242f02);
+    font-family: "Orbitron", sans-serif;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+@keyframes counter3 {
+  from {
+    --num3: 0;
+  }
+  to {
+    --num3: 5000;
+  }
 }
 /*-------------------------------------------------------------------------------------------------------------- */
 
 section{
-    margin-top: 200px;
+    margin-top: 100px;
     height:auto;
     padding-top: 0;
 
 }
 
-/*Screens */
+.footer {
+  height: 100px;
+  display:block;
+  align-items: center;
+  background: #0b3a52;
+  color:#00ffff;
+  z-index: 1;
+  
+}
+.copyright{
+  color: #00ffff;
+  font-family: "Orbitron", sans-serif;
+}
+.socials {
+
+}
+
+/*----------------MEDIA------------------------------------------------------*/
 @media screen and (max-width: 1500px) {
   img.logo{
     width: 50%;
@@ -271,9 +442,12 @@ section{
 @keyframes glow {
   from {
     text-shadow: 0 0 10px #000000, 0 0 20px #fff, 0 0 30px #00ffff, 0 0 40px #00ffff, 0 0 50px #00ffff, 0 0 60px #00ffff, 0 0 70px #00ffff;
+    filter: drop-shadow(0 0 0.75rem #00ffff);
   }
   
   to {
     text-shadow: 0 0 20px #000000, 0 0 30px #00ffff 0 0 40px #00ffff 0 0 50px #00ffff 0 0 60px #00ffff 0 0 70px #00ffff 0 0 80px #00ffff;
+    filter: drop-shadow(0 0 0.9rem #173636);
   }
 }
+
