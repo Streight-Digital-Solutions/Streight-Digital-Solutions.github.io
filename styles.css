@@ -510,6 +510,7 @@ section{
   }
   .nav,.terms-buttons,.action-button,.action-button:hover{
     width:100%;
+    font-size: 100%;
   }
   .action-button,.action-button:hover{
     font-size: 70%;
@@ -546,6 +547,7 @@ section{
   }
   .nav,.terms-buttons,.action-button,.action-button:hover{
     width:100%;
+    font-size: 80%;
   }
   .action-button,.action-button:hover{
     font-size: 70%;
