@@ -552,7 +552,10 @@ section{
     font-size: 200%;
   }
   .card-title{
-    font-size: 100%;
+    font-size: 150%;
+  }
+  .card-price{
+    font-size: 200%;
   }
   .nav,.terms-buttons,.action-button,.action-button:hover{
     width:100%;
