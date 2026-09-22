@@ -1,6 +1,10 @@
-var card = document.getElementById("nav");
-card.addEventListener("mouseover", playMusic);
-card.addEventListener("click", playMusic);
+var navitem = document.getElementById("nav");
+navitem.addEventListener("mouseover", playMusic);
+navitem.addEventListener("click", playMusic);
+
+var termbutton = document.getElementById("action-button");
+termbutton.addEventListener("mouseover", playMusic);
+termbutton.addEventListener("click", playMusic);
 
 function playMusic(){
     var audio = new Audio("./audio/click.mp3");
