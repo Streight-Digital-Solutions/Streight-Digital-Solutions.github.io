@@ -99,7 +99,8 @@ h1{
     z-index: 2;
 }
 .term-description{
-    padding-left: 10px;
+    margin: 10px 10px 10px 10px;
+    padding-bottom: 20px;
     display: block;
     color: #23464f;
     font-family: "Orbitron", sans-serif;
@@ -115,7 +116,7 @@ h1{
     font-family: "Orbitron", sans-serif;
     font-size: 50px;
     z-index: 2;
-    background-color: #00ffffa3;
+    background-color: #00ffffc5;
     border-radius: 10px;
 }
 .p{
@@ -150,8 +151,6 @@ h1{
 
 
 /*---------------------------------------------Buttons---------------------------------------------------------*/
-
-
 .terms-buttons{
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(20%, 2px));
@@ -188,22 +187,42 @@ h1{
 /*-------------------------------------------------------------------------------------------------------------- */
 
 /*------------------------------------------------CARDS----------------------------------------------------------*/
-.cards {
+.web-cards {
   max-width: 100%;
   margin: 1px auto;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
-  grid-gap: 20px;
+  justify-self: center;
+  align-self: center;
+  grid-gap: 0px;
 }
-
+.addon-cards {
+  max-width: 100%;
+  margin: 1px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+  grid-gap: 0px;
+}
+.card-description{
+  display: table;
+  justify-self: center;
+}
 .card {
   border: 5px solid  #00ffff;
   border-radius: 3px;
   background-color: #00ffff83;
+  align-items: center;
+  margin: 10px;
   &:hover{
     border: 5px solid  #09516d73;
     background-color: #2b4046a4;
-    .card-title, .card-price1, .card-price2,.card-price3, .card-description{
+    .card-title,
+    .card-price1,
+    .card-price2,
+    .card-price3,
+    .card-description,
+    .pos-price,
+    .logo-price{
     background: -webkit-linear-gradient(#fcd913, #6d9006);
     font-family: "Orbitron", sans-serif;
     -webkit-background-clip: text;
@@ -227,11 +246,14 @@ h1{
     text-align: center;
 }
 
+
 li{
     color: #070909;
     font-family: "Oxanium", sans-serif, bold;
     font-size: 24px;
     font-weight: 400;
+   
+
 }
 
 @property --num1 {
@@ -338,6 +360,77 @@ li{
     --num3: 5000;
   }
 }
+
+@property --num4 {
+  syntax: "<integer>";
+  initial-value: 500;
+  inherits: false;
+}
+.logo-price {
+  animation: counter4 8s  alternate ease-in-out;
+  transition: --num1 1s;
+  counter-reset: none;
+  counter-reset: num var(--num4);
+  text-align: center;
+  font-size: 48px;
+  background: -webkit-linear-gradient(#000000, #023939);
+  font-family: "Orbitron", sans-serif;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  &:after{
+    content: counter(num);
+  }
+  &:hover{
+    background: -webkit-linear-gradient(#fcd913, #242f02);
+    font-family: "Orbitron", sans-serif;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+@keyframes counter4 {
+  from {
+    --num4: 0;
+  }
+  to {
+    --num4: 500;
+  }
+}
+
+
+@property --num5 {
+  syntax: "<integer>";
+  initial-value: 250;
+  inherits: false;
+}
+.pos-price {
+  animation: counter5 8s  alternate ease-in-out;
+  transition: --num5 1s;
+  counter-reset: none;
+  counter-reset: num var(--num5);
+  text-align: center;
+  font-size: 48px;
+  background: -webkit-linear-gradient(#000000, #023939);
+  font-family: "Orbitron", sans-serif;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  &:after{
+    content: counter(num);
+  }
+  &:hover{
+    background: -webkit-linear-gradient(#fcd913, #242f02);
+    font-family: "Orbitron", sans-serif;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+@keyframes counter5 {
+  from {
+    --num5: 0;
+  }
+  to {
+    --num5: 250;
+  }
+}
 /*-------------------------------------------------------------------------------------------------------------- */
 
 section{
@@ -359,6 +452,7 @@ section{
 .copyright{
   color: #00ffff;
   font-family: "Orbitron", sans-serif;
+  text-align: center;
 }
 .socials {
 
@@ -397,6 +491,7 @@ section{
   }
   .nav,.terms-buttons,.action-button,.action-button:hover{
     width:100%;
+    font-size: 100%;
   }
   .action-button,.action-button:hover{
     font-size: 70%;
