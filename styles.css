@@ -405,7 +405,7 @@ li{
 
 @property --num5 {
   syntax: "<integer>";
-  initial-value: 250;
+  initial-value: 500;
   inherits: false;
 }
 .pos-price {
@@ -434,15 +434,49 @@ li{
     --num5: 0;
   }
   to {
-    --num5: 250;
+    --num5: 500;
+  }
+}
+@property --num6 {
+  syntax: "<integer>";
+  initial-value: 500;
+  inherits: false;
+}
+.pos-price2 {
+  animation: counter6 8s  alternate ease-in-out;
+  transition: --num6 1s;
+  counter-reset: none;
+  counter-reset: num var(--num6);
+  text-align: center;
+  font-size: 48px;
+  background: -webkit-linear-gradient(#000000, #023939);
+  font-family: "Orbitron", sans-serif;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  &:after{
+    content: counter(num);
+  }
+  &:hover{
+    background: -webkit-linear-gradient(#fcd913, #242f02);
+    font-family: "Orbitron", sans-serif;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+@keyframes counter6 {
+  from {
+    --num6: 0;
+  }
+  to {
+    --num6:500;
   }
 }
 /*-------------------------------------------------------------------------------------------------------------- */
 
 section{
-    margin-top: 50px;
-    height:auto;
-    padding-top: 0;
+  margin-top: 50px;
+  height:auto;
+  padding-top: 0;
 
 }
 
@@ -450,9 +484,11 @@ section{
   height: 100px;
   display:block;
   align-items: center;
-  background: #0b3a52;
+  background-color: #0b3a5200;
   color:#00ffff;
   z-index: 1;
+  align-content: center;
+  align-self: center;
   
 }
 .copyright{
@@ -461,6 +497,12 @@ section{
   text-align: center;
 }
 .socials {
+ display: flex;
+ justify-content: center;
+
+}
+.social-icon {
+  margin: 10px;
 
 }
 
@@ -528,7 +570,7 @@ section{
     height: 50%;
   } 
   .glowing-title,.glowing-title:hover,.title{ 
-    font-size: 200%;
+    font-size: 300%;
   }
   .card-title{
     font-size: 80%;
@@ -549,7 +591,7 @@ section{
     height: 50%;
   } 
   .glowing-title,.glowing-title:hover,.title{ 
-    font-size: 200%;
+    font-size: 300%;
   }
   .card-title{
     font-size: 150%;
@@ -592,10 +634,27 @@ section{
 
 
 /*----------------FORMS------------------------------------------------------*/
+.contact-section{
+  margin-top: 50px;
+  height:auto;
+  padding-top: 0;
+  text-align: center;
+  display: block;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+}
+
 form{
   text-align: center;
   display: block;
   justify-items: center;
+  background-color: #0000003d;
+  margin: 50px;
+  border-radius: 10px;
+  width: 700px;
+  align-items: center;
+  align-content: center;
 }
 .submit-button,
 input,textarea{
@@ -604,10 +663,18 @@ input,textarea{
   font-size: 20px;
   font-family: "Orbitron", sans-serif;
   align-items: center;
+  &:hover{
+    background-color: #00ffff;
+    border-color: #008cff;
+  }
  
 }
+.submit-button{
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
 textarea,input{
-  width:500px;
+  width: 500px;
 }
 .form-headings{
   margin: 20px;
