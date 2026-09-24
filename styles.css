@@ -596,7 +596,13 @@ section{
   .card-title{
     font-size: 150%;
   }
-  .card-price{
+  .card-price,
+  .card-price1,
+  .card-price2,
+  .card-price3,
+  .logo-price,
+  .pos-price,
+  .pos-price2{
     font-size: 200%;
   }
   .nav,.terms-buttons,.action-button,.action-button:hover{
