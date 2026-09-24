@@ -275,7 +275,7 @@ li{
   inherits: false;
 }
 .card-price1 {
-  animation: counter1 8s  alternate ease-in-out;
+  animation: counter1 2s  alternate ease-in-out;
   transition: --num1 1s;
   counter-reset: none;
   counter-reset: num var(--num1);
@@ -310,7 +310,7 @@ li{
   inherits: false;
 }
 .card-price2 {
-  animation: counter2 8s  alternate ease-in-out;
+  animation: counter2 2s  alternate ease-in-out;
   transition: --num2 1s;
   counter-reset: none;
   counter-reset: num var(--num2);
@@ -345,7 +345,7 @@ li{
   inherits: false;
 }
 .card-price3 {
-  animation: counter3 8s  alternate ease-in-out;
+  animation: counter3 2s  alternate ease-in-out;
   transition: --num3 1s;
   counter-reset: none;
   counter-reset: num var(--num3);
@@ -380,7 +380,7 @@ li{
   inherits: false;
 }
 .logo-price {
-  animation: counter4 8s  alternate ease-in-out;
+  animation: counter4 2s  alternate ease-in-out;
   transition: --num1 1s;
   counter-reset: none;
   counter-reset: num var(--num4);
@@ -416,7 +416,7 @@ li{
   inherits: false;
 }
 .pos-price {
-  animation: counter5 8s  alternate ease-in-out;
+  animation: counter5 2s  alternate ease-in-out;
   transition: --num5 1s;
   counter-reset: none;
   counter-reset: num var(--num5);
@@ -450,7 +450,7 @@ li{
   inherits: false;
 }
 .pos-price2 {
-  animation: counter6 8s  alternate ease-in-out;
+  animation: counter6 2s  alternate ease-in-out;
   transition: --num6 1s;
   counter-reset: none;
   counter-reset: num var(--num6);
