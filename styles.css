@@ -222,7 +222,7 @@ h1{
   &:hover{
     border: 5px solid  #09516d73;
     background-color: #2b4046a4;
-    .card-title,
+    .web-card-title,
     .card-price1,
     .card-price2,
     .card-price3,
@@ -251,7 +251,14 @@ h1{
     z-index: 2;
     text-align: center;
 }
-
+.web-card-title {
+    display: block;
+    color: #011f27;
+    font-family: "Orbitron", sans-serif;
+    font-size: 70px;
+    z-index: 2;
+    text-align: center;
+}
 
 li{
     color: #070909;
@@ -595,6 +602,9 @@ section{
   }
   .card-title{
     font-size: 100%;
+  }
+  .web-card-title{
+    font-size: 200%;
   }
   .card-price,
   .card-price1,
