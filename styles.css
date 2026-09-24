@@ -509,8 +509,8 @@ section{
 /*----------------MEDIA------------------------------------------------------*/
 @media screen and (max-width: 2200px) {
   img.logo{
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: 100%;
   } 
   .glowing-title,.glowing-title:hover,.title{ 
     font-size: 300%;
@@ -591,7 +591,7 @@ section{
     height: 50%;
   } 
   .glowing-title,.glowing-title:hover,.title{ 
-    font-size: 300%;
+    font-size: 200%;
   }
   .card-title{
     font-size: 100%;
