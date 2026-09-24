@@ -516,6 +516,12 @@ section{
 
 /*----------------MEDIA------------------------------------------------------*/
 @media screen and (max-width: 2200px) {
+  .action-button{
+    width:80%;
+    &:hover{
+      width:80%;
+    }
+  }
   img.logo{
     width: 50%;
     height: 50%;
@@ -527,7 +533,7 @@ section{
   .card-title,.web-card-title{
     font-size: 250%;
   }
-  .nav,.terms-buttons,.action-button,.action-button:hover{
+  .nav,.terms-buttons{
     width:100%;
     font-size: 30px;
   }
