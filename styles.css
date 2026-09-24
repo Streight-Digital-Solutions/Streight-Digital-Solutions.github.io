@@ -652,9 +652,9 @@ form{
   background-color: #0000003d;
   margin: 50px;
   border-radius: 10px;
-  width: 700px;
   align-items: center;
   align-content: center;
+  width:100%;
 }
 .submit-button,
 input,textarea{
