@@ -222,6 +222,7 @@ h1{
   &:hover{
     border: 5px solid  #09516d73;
     background-color: #2b4046a4;
+    .card-title,
     .web-card-title,
     .card-price1,
     .card-price2,
@@ -523,7 +524,7 @@ section{
   .glowing-title,.glowing-title:hover,.title{ 
     font-size: 300%;
   }
-  .card-title{
+  .card-title,.web-card-title{
     font-size: 250%;
   }
   .nav,.terms-buttons,.action-button,.action-button:hover{
