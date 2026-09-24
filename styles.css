@@ -563,6 +563,9 @@ section{
   .card-title{
     font-size: 100%;
   }
+  .web-card-title{
+    font-size: 200%;
+  }
   .nav,.terms-buttons,.action-button,.action-button:hover{
     width:100%;
     font-size: 100%;
@@ -581,6 +584,9 @@ section{
   }
   .card-title{
     font-size: 80%;
+  }
+  .web-card-title{
+    font-size: 200%;
   }
   .nav,.terms-buttons,.action-button,.action-button:hover{
     width:100%;
