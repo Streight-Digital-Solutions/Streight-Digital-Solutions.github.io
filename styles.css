@@ -629,6 +629,9 @@ section{
   .action-button,.action-button:hover{
     font-size: 70%;
   }
+  input,textarea{
+    width: 50%;
+  }
   .web-cards {
     max-width: 100%;
     margin: 1px auto;
@@ -677,7 +680,7 @@ form{
   border-radius: 10px;
   align-items: center;
   align-content: center;
-  width:100%;
+  width:90%;
 }
 .submit-button,
 input,textarea{
@@ -697,7 +700,7 @@ input,textarea{
   margin-bottom: 20px;
 }
 textarea,input{
-  width: 500px;
+  width: 80%;
 }
 .form-headings{
   margin: 20px;
