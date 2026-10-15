@@ -1,6 +1,16 @@
-var navitem = document.getElementById("nav");
+var navitem = document.getElementById("nav-link");
+var navitem2 = document.getElementById("nav-link2");
+var navitem3 = document.getElementById("nav-link3");
+var navitem4 = document.getElementById("nav-link4");
+var navitem5 = document.getElementById("nav-link5");
+var navitem6 = document.getElementById("nav-link6");
+
 navitem.addEventListener("mouseover", playMusic);
-navitem.addEventListener("click", playMusic);
+navitem2.addEventListener("mouseover", playMusic);
+navitem3.addEventListener("mouseover", playMusic);
+navitem4.addEventListener("mouseover", playMusic);
+navitem5.addEventListener("mouseover", playMusic);
+navitem6.addEventListener("mouseover", playMusic);
 
 var termbutton = document.getElementById("action-button");
 termbutton.addEventListener("click", playMusic);

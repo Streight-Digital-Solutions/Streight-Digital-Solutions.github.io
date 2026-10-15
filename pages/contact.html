@@ -18,7 +18,8 @@
     <meta http-equiv='pragma' content='no-cache'>
 
     <!-- LINKS  -->
-    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/root.css">
+    <link rel="stylesheet" href="../styles/contact.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css?family=Orbitron|Oxanium" rel="stylesheet">
@@ -52,11 +53,13 @@
                 <audio src="../assets/audio/click.mp3" id="sound"></audio>
             <!-- Navigation -->
                 <nav id="nav">
-                    <a href="../index.html" onclick="playMusic();">Home</a>
-                    <a href="pricing.html" onclick="playMusic();">Pricing</a>
-                    <a href="terms.html" onclick="playMusic();">Terms</a>
-                    <a class="active" href="contact.html" onclick="playMusic();">Contact</a>
-                    <a href="advertise.html" onclick="playMusic();">Advertise</a>
+                    <audio src="../assets/audio/click.mp3" id="sound"></audio>
+                    <a id="nav-link" href="../index.html">Home</a>
+                    <a id="nav-link2" href="pricing.html">Pricing</a>
+                    <a id="nav-link3" href="terms.html">Terms</a>
+                    <a id="nav-link4" href="contact.html">Contact</a>
+                    <a id="nav-link5" href="advertise.html">Advertise</a>
+                    <a id="nav-link6" href="store.html">Store</a>
                 </nav>
             </div>
 
@@ -64,7 +67,7 @@
             <video autoplay muted loop class="background-video">
                 <source src="../assets/videos/backgroundvideo.mp4" type="video/mp4">
             </video>
-        </div>
+
         <section class= "contact-section" id="contact-form">
             <form action="https://api.web3forms.com/submit" method="POST">
                 <input type="hidden" name="access_key" value="6cf0bab0-63af-440b-8d58-7506057a34f2">
@@ -79,6 +82,8 @@
                 <div class="h-captcha" data-captcha="true" data-theme="dark"></div>
             </form>
         </section>
+        </div>
+
         <footer>
             <p class="copyright">© Streight Digital Solutions. All rights reserved.</p>
             <div class="socials"> 

@@ -1,0 +1,311 @@
+.store-title {
+    display: block;
+    color: var(--primary-color--);
+    font-family: "Orbitron", sans-serif;
+    font-size: 100px;
+    z-index: 2;
+    font-size: 80px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+.store-item-card {
+  height: fit-content;
+  border: 5px solid  var(--primary-color--);
+  border-radius: 20px;
+  background-color: var(--primary-color--);
+  align-items: center;
+  &:hover{
+    border: 5px solid  var(--secondary-color--);
+    background-color: var(--tertiary-color--);
+    background: linear-gradient(#161615, #067990);
+    font-family: "Orbitron", sans-serif;
+    .store-item-title{
+      color:var(--primary-color--)
+    }
+    }
+  }
+
+.youtube{
+  display:flex;
+  margin: 1px auto;
+  width:400px;
+  height:226px;
+  border-radius: 10px;
+}
+.item-cards {
+  max-width: 100%;
+  margin: 1px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+  justify-self: center;
+  align-self: center;
+  grid-gap: 50px;
+}
+.item-details{
+  justify-content: center;
+  text-align: left;
+  text-decoration: none;
+  list-style: none;
+}
+
+.store-item-image {
+  display: block;
+  border-radius: 20px ;
+  margin: 20px auto;
+  width: 100%;
+  height: 40%;
+}
+
+
+@property --num1 {
+  syntax: "<integer>";
+  initial-value: 40;
+  inherits: false;
+}
+.store-item-price {
+  animation: counter1 2s  alternate ease-in-out;
+  transition: --num1 1s;
+  counter-reset: none;
+  counter-reset: num var(--num1);
+  text-align: center;
+  font-size: 48px;
+  background: -webkit-linear-gradient(#000000, #023939);
+  font-family: "Orbitron", sans-serif;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  &:after{
+    content: counter(num);
+  }
+  &:hover{
+    background: -webkit-linear-gradient(#fcd913, #242f02);
+    font-family: "Orbitron", sans-serif;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+@keyframes counter1 {
+  from {
+    --num1: 0;
+  }
+  to {
+    --num1: 40;
+  }
+}
+
+
+
+
+.store-item-title {
+    display: block;
+    color: #011f27;
+    font-family: "Orbitron", sans-serif;
+    font-size: 70px;
+    z-index: 2;
+    text-align: center;
+}
+.item-details{
+    color: #070909;
+    font-family: "Oxanium", sans-serif, bold;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.buy-button {
+    display:block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 50px;
+    width: 50%;
+    margin:5px auto;
+    background-color: #00000088;
+    color: var(--primary-color--);
+    border-radius: 5px;
+    border-color: var(--primary-color--);
+    font-size: 20px;
+    font-family: "Orbitron", sans-serif;
+    &:hover{
+        background-color: var(--primary-color--);
+        color: #000000;
+    }
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------/
+                                                       SCREEN-RESOLUTION
+/----------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 2200px) {
+  .action-button{
+    width:80%;
+    &:hover{
+      width:80%;
+    }
+  }
+  img.logo{
+    width: 80%;
+    height: 80%;
+  } 
+  .glowing-title,.glowing-title:hover,.title{ 
+    font-size: 300%;
+  }
+  .card-title,.web-card-title{
+    font-size: 250%;
+  }
+  .nav,.terms-buttons{
+    width:100%;
+    font-size: 30px;
+  }
+  .action-button,.action-button:hover{
+    font-size: 70%;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .youtube{
+    display:flex;
+    margin: 1px auto;
+    width:100%;
+    height:400px;
+    border-radius: 10px;
+  }
+  .item-cards {
+    grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+  }
+  img.logo{
+    width: 50%;
+    height: 50%;
+  } 
+  .glowing-title,.glowing-title:hover,.title{ 
+    font-size: 300%;
+  }
+  .title{
+    font-size: 100%;
+  }
+  .nav,.terms-buttons,.action-button,.action-button:hover{
+    width:100%;
+    font-size: 100%;
+  }
+  .action-button,.action-button:hover{
+    font-size: 70%;
+  }
+}
+@media screen and (max-width: 1080px) {
+   .youtube{
+    display:flex;
+    margin: 1px auto;
+    width:100%;
+    height:400px;
+    border-radius: 10px;
+  }
+  .item-cards {
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+  }
+  img.logo{
+    width: 50%;
+    height: 50%;
+  } 
+  .glowing-title,.glowing-title:hover,.title{ 
+    font-size: 100%;
+  }
+  .card-title{
+    font-size: 100%;
+  }
+  .web-card-title{
+    font-size: 200%;
+  }
+  .nav,.terms-buttons,.action-button,.action-button:hover{
+    width:100%;
+    font-size: 100%;
+  }
+  .action-button,.action-button:hover{
+    font-size: 70%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .item-cards {
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+  }
+  .youtube{
+    display:flex;
+    margin: 1px auto;
+    width:100%;
+    height:400px;
+    border-radius: 10px;
+  }
+  img.logo{
+    width: 50%;
+    height: 50%;
+  } 
+  .glowing-title,.glowing-title:hover,.title{ 
+    font-size: 300%;
+  }
+  .card-title{
+    font-size: 80%;
+  }
+  .web-card-title{
+    font-size: 200%;
+  }
+  .nav,.terms-buttons,.action-button,.action-button:hover{
+    width:100%;
+  }
+  .action-button,.action-button:hover{
+    font-size: 70%;
+  }
+  .web-cards {
+  grid-template-columns: repeat(auto-fill, minmax(30%, fr));
+  }
+}
+@media screen and (max-width: 600px) {
+  img.logo{
+    width: 50%;
+    height: 50%;
+  } 
+  .glowing-title,.glowing-title:hover,.title{ 
+    font-size: 200%;
+  }
+  .store-item-title{
+    font-size: 40px;
+  }
+  .web-card-title{
+    font-size: 200%;
+  }
+  .card-price,
+  .card-price1,
+  .card-price2,
+  .card-price3,
+  .logo-price,
+  .pos-price,
+  .pos-price2{
+    font-size: 200%;
+  }
+  .nav,.terms-buttons,.action-button,.action-button:hover{
+    width:100%;
+    font-size: 80%;
+  }
+  .term-title,.action-button,.action-button:hover{
+    font-size: 70%;
+  }
+  input,textarea{
+    width: 50%;
+  }
+  .web-cards {
+    max-width: 100%;
+    margin: 1px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(60%, 1fr));
+    justify-self: center;
+    align-self: center;
+    grid-gap: 0px;
+  }
+  .youtube{
+    display:flex;
+    margin: 1px auto;
+    width:100%;
+    height:226px;
+    border-radius: 10px;
+  }
+  .store-title {
+    font-size: 40px;
+
+}
+}

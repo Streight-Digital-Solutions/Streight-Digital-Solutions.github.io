@@ -1,0 +1,212 @@
+/*---------------------------------------PRICE CARD COUNTERS-------------------------------------------------------*/
+
+@property --num1 {
+  syntax: "<integer>";
+  initial-value: 1200;
+  inherits: false;
+}
+.card-price1 {
+  animation: counter1 2s  alternate ease-in-out;
+  transition: --num1 1s;
+  counter-reset: none;
+  counter-reset: num var(--num1);
+  text-align: center;
+  font-size: 48px;
+  background: -webkit-linear-gradient(#000000, #023939);
+  font-family: "Orbitron", sans-serif;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  &:after{
+    content: counter(num);
+  }
+  &:hover{
+    background: -webkit-linear-gradient(#fcd913, #242f02);
+    font-family: "Orbitron", sans-serif;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+@keyframes counter1 {
+  from {
+    --num1: 0;
+  }
+  to {
+    --num1: 1200;
+  }
+}
+
+@property --num2 {
+  syntax: "<integer>";
+  initial-value: 2500;
+  inherits: false;
+}
+.card-price2 {
+  animation: counter2 2s  alternate ease-in-out;
+  transition: --num2 1s;
+  counter-reset: none;
+  counter-reset: num var(--num2);
+  text-align: center;
+  font-size: 48px;
+  background: -webkit-linear-gradient(#000000, #023939);
+  font-family: "Orbitron", sans-serif;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  &:after{
+    content: counter(num);
+  }
+  &:hover{
+    background: -webkit-linear-gradient(#fcd913, #242f02);
+    font-family: "Orbitron", sans-serif;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+@keyframes counter2 {
+  from {
+    --num2: 0;
+  }
+  to {
+    --num2: 2500;
+  }
+}
+
+@property --num3 {
+  syntax: "<integer>";
+  initial-value: 5000;
+  inherits: false;
+}
+.card-price3 {
+  animation: counter3 2s  alternate ease-in-out;
+  transition: --num3 1s;
+  counter-reset: none;
+  counter-reset: num var(--num3);
+  text-align: center;
+  font-size: 48px;
+  background: -webkit-linear-gradient(#000000, #023939);
+  font-family: "Orbitron", sans-serif;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  &:after{
+    content: counter(num);
+  }
+  &:hover{
+    background: -webkit-linear-gradient(#fcd913, #242f02);
+    font-family: "Orbitron", sans-serif;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+@keyframes counter3 {
+  from {
+    --num3: 0;
+  }
+  to {
+    --num3: 5000;
+  }
+}
+
+@property --num4 {
+  syntax: "<integer>";
+  initial-value: 500;
+  inherits: false;
+}
+.logo-price {
+  animation: counter4 2s  alternate ease-in-out;
+  transition: --num1 1s;
+  counter-reset: none;
+  counter-reset: num var(--num4);
+  text-align: center;
+  font-size: 48px;
+  background: -webkit-linear-gradient(#000000, #023939);
+  font-family: "Orbitron", sans-serif;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  &:after{
+    content: counter(num);
+  }
+  &:hover{
+    background: -webkit-linear-gradient(#fcd913, #242f02);
+    font-family: "Orbitron", sans-serif;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+@keyframes counter4 {
+  from {
+    --num4: 0;
+  }
+  to {
+    --num4: 500;
+  }
+}
+
+
+@property --num5 {
+  syntax: "<integer>";
+  initial-value: 500;
+  inherits: false;
+}
+.pos-price {
+  animation: counter5 2s  alternate ease-in-out;
+  transition: --num5 1s;
+  counter-reset: none;
+  counter-reset: num var(--num5);
+  text-align: center;
+  font-size: 48px;
+  background: -webkit-linear-gradient(#000000, #023939);
+  font-family: "Orbitron", sans-serif;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  &:after{
+    content: counter(num);
+  }
+  &:hover{
+    background: -webkit-linear-gradient(#fcd913, #242f02);
+    font-family: "Orbitron", sans-serif;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+@keyframes counter5 {
+  from {
+    --num5: 0;
+  }
+  to {
+    --num5: 500;
+  }
+}
+@property --num6 {
+  syntax: "<integer>";
+  initial-value: 500;
+  inherits: false;
+}
+.pos-price2 {
+  animation: counter6 2s  alternate ease-in-out;
+  transition: --num6 1s;
+  counter-reset: none;
+  counter-reset: num var(--num6);
+  text-align: center;
+  font-size: 48px;
+  background: -webkit-linear-gradient(#000000, #023939);
+  font-family: "Orbitron", sans-serif;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  &:after{
+    content: counter(num);
+  }
+  &:hover{
+    background: -webkit-linear-gradient(#fcd913, #242f02);
+    font-family: "Orbitron", sans-serif;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+@keyframes counter6 {
+  from {
+    --num6: 0;
+  }
+  to {
+    --num6:500;
+  }
+}
+

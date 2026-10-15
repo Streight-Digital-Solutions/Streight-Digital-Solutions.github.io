@@ -19,7 +19,8 @@
     <meta http-equiv='pragma' content='no-cache'>
 
     <!-- LINKS  -->
-    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/root.css">
+    <link rel="stylesheet" href="../styles/pricing.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css?family=Orbitron|Oxanium" rel="stylesheet">
@@ -36,7 +37,7 @@
 </head>
 
 
-<!-- GOOGLE ANALYTICS -->
+<!------------------------------ GOOGLE ANALYTICS ---------------------------------------->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-WD24386N6K"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -45,7 +46,7 @@
 
   gtag('config', 'G-WD24386N6K');
 </script>
-
+<!---------------------------------------------------------------------------------------->
 
     <body>
         <div class="hero">
@@ -55,11 +56,13 @@
                 <audio src="audio/click.mp3" id="sound"></audio>
             <!-- Navigation -->
                 <nav id="nav">
-                    <a href="../index.html" onclick="playMusic();">Home</a>
-                    <a class="active" href="pricing.html" onclick="playMusic();">Pricing</a>
-                    <a href="terms.html" onclick="playMusic();">Terms</a>
-                    <a href="contact.html" onclick="playMusic();">Contact</a>
-                    <a href="advertise.html" onclick="playMusic();">Advertise</a>
+                    <audio src="../assets/audio/click.mp3" id="sound"></audio>
+                    <a id="nav-link" href="../index.html">Home</a>
+                    <a id="nav-link2" href="pricing.html">Pricing</a>
+                    <a id="nav-link3" href="terms.html">Terms</a>
+                    <a id="nav-link4" href="contact.html">Contact</a>
+                    <a id="nav-link5" href="advertise.html">Advertise</a>
+                    <a id="nav-link6" href="store.html">Store</a>
                 </nav>
             </div>
             <!-- Background Video -->
@@ -70,7 +73,7 @@
         <section id="pricing">
             <h1 class="title">Web Design</h1>
             <div class="web-cards">
-                <article class="card" id="card">
+                <article class="store-item-card" id="card">
                     <h1 class="web-card-title">BASIC</h1>
                     <ul class="card-description">
                         <li>Free Hosting</li>
