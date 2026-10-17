@@ -2,7 +2,9 @@
   --primary-color--: rgb(214, 162, 5);
   --secondary-color--:rgba(214, 162, 5, 0.792);
 }
-
+body{
+  overflow-x: hidden;
+}
 .hero {
     color: #0b3a52;
     display: flex;
@@ -270,14 +272,15 @@
 }
 @media screen and (max-width: 600px) {
   .ad-nav{
-    width: 100%;
-    display:block;
+    width:90%;
+    margin:0 auto;
+    display: block;
     padding: 20px;
     border-radius: 20px;
     }
   .ad-nav a{
     display: block;
-    font-size: 30px;
+    font-size: 15px;
   }
   .ad-card img{
     width: 100%;
@@ -287,20 +290,20 @@
     font-size: 15px;
   }
   .ad-card {
-  &:hover{
-    .ad-card-title,
-    .ad-card-description{
-    font-family: "Tangerine", sans-serif;
-    font-size: 15px;
-    color: #ffffff;
+    &:hover{
+      .ad-card-title,
+      .ad-card-description{
+      font-family: "Tangerine", sans-serif;
+      font-size: 15px;
+      color: #ffffff;
+      }
     }
   }
-}
   .ad-slider{
     height: 100%;
     width: 300%;
     gap: 20px;
-}
+  }
 
 .ads-500x500{
   grid-gap: 19px;
