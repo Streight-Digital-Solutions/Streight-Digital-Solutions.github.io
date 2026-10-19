@@ -99,6 +99,7 @@ nav a.active {
   width: auto;
   justify-content: center;
   text-align: center;
+  margin: 5px;
   padding:5px 10px;
   text-decoration: none;
   font-size: 24px;
@@ -675,11 +676,10 @@ textarea,input{
 .social-link{
   max-width: fit-content;
 }
+
 /*----------------------------------------------------------------------------------------------------------------*/
 /*--------------------------------------------   SCREEN SIZES  ---------------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------------------*/
-
-
 @media screen and (max-width: 2200px) {
   body{
     max-width: 2200px;
@@ -831,7 +831,7 @@ textarea,input{
   .web-card-title{
     font-size: 200%;
   }
-  .nav,.ad-nav,.terms-buttons,.action-button,.action-button:hover{
+  .ad-nav,.terms-buttons,.action-button,.action-button:hover{
     width:100%;
   }
   .action-button,.action-button:hover{
@@ -858,7 +858,10 @@ textarea,input{
   nav{
     display: block;
   }
-  
+  .desktop-nav{
+    display: block;
+    margin: 20px;
+  }
   body{
     max-width: 600px;
   }
