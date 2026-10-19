@@ -16,6 +16,7 @@
   border-radius: 20px;
   background-color: var(--primary-color--);
   align-items: center;
+  margin: 0 5%;
   &:hover{
     border: 5px solid  var(--secondary-color--);
     background-color: var(--tertiary-color--);
@@ -29,8 +30,8 @@
 
 .youtube{
   display:flex;
-  margin: 1px auto;
-  width:400px;
+  margin: 10% auto;
+  width:90%;
   height:226px;
   border-radius: 10px;
 }
@@ -300,7 +301,7 @@
   .youtube{
     display:flex;
     margin: 1px auto;
-    width:100%;
+    width:90%;
     height:226px;
     border-radius: 10px;
   }
