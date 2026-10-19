@@ -1,33 +1,18 @@
-var navitem = document.getElementById("nav-link");
-var navitem2 = document.getElementById("nav-link2");
-var navitem3 = document.getElementById("nav-link3");
-var navitem4 = document.getElementById("nav-link4");
-var navitem5 = document.getElementById("nav-link5");
-var navitem6 = document.getElementById("nav-link6");
-
-navitem.addEventListener("mouseover", playMusic);
-navitem2.addEventListener("mouseover", playMusic);
-navitem3.addEventListener("mouseover", playMusic);
-navitem4.addEventListener("mouseover", playMusic);
-navitem5.addEventListener("mouseover", playMusic);
-navitem6.addEventListener("mouseover", playMusic);
-
-var termbutton = document.getElementById("action-button");
-termbutton.addEventListener("click", playMusic);
-
+// FUNCTION THAT PLAYS THE UNIVERSAL SOUND EFFECT
 function playMusic(){
     var audio = new Audio("../assets/audio/click.mp3");
     audio.play();
-   
 }
+// APPLY SOUND EFFECT TO ALL NAVIGATION LINKS
+var navitems = document.querySelectorAll("#nav-link");
+navitems.forEach((event) => event.addEventListener("mouseover", playMusic));
 
-var button = document.getElementById("liability");
-button.addEventListener("click", Scroll)
+// APPLY SOUND EFFECT TO ALL TERMS BUTTONS WHEN CLICKED
+var termbuttons = document.querySelectorAll("#action-button");
+termbuttons.forEach((event) => event.addEventListener("click", playMusic));
 
-function Scroll(){
-    button.scrollIntoView();
-}
 
+// CONTACT FORM SUBMISSION
 const form = document.getElementById('form');
 const submitBtn = form.querySelector('button[type="submit"]');
 
