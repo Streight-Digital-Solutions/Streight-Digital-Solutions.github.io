@@ -59,7 +59,42 @@ nav {
   border-radius: 10px;
   margin: 50px;
 }
+
 nav a {
+  color: #f2f2f2;
+  width: auto;
+  justify-content: center;
+  text-align: center;
+  margin: 5px;
+  padding:5px 10px;
+  text-decoration: none;
+  font-size: 24px;
+  font-family: "Orbitron", sans-serif;
+  z-index: 3;
+  border-radius: 10px;
+}
+
+nav a:hover {
+  background-image: linear-gradient(to right,var(--primary-color--),var(--secondary-color--));
+  color: black;
+}
+
+nav a.active {
+  background-image: linear-gradient(to right,var(--primary-color--),var(--secondary-color--));
+  color: rgb(2, 2, 2);
+  border: solid var(--primary-color--);
+}
+
+.desktop-nav {
+  display:flex;
+  background-color: var(--tertiary-color--);
+  border-color: var(--primary-color--);
+  border: solid var(--tertiary-color--);
+  border-radius: 10px;
+  margin: 50px;
+}
+
+.desktop-nav a {
   color: #f2f2f2;
   width: auto;
   justify-content: center;
@@ -69,16 +104,17 @@ nav a {
   font-size: 24px;
   font-family: "Orbitron", sans-serif;
   z-index: 3;
-  border-radius: 10px;
-  
+  border-radius: 10px; 
 }
-nav a:hover {
+
+.desktop-nav a:hover {
   background-image: linear-gradient(to right,var(--primary-color--),var(--secondary-color--));
   color: black;
 }
-nav a.active {
+
+.desktop-nav a.active {
   background-image: linear-gradient(to right,var(--primary-color--),var(--secondary-color--));
-  color: white;
+  color: rgb(2, 2, 2);
   border: solid var(--primary-color--);
 }
 
@@ -115,7 +151,7 @@ nav a.active {
 .ad-nav a.active {
   background-image: linear-gradient(to right,var(--primary-color),#00000053);
   color: #fdfafa;
-  border-color: var(--primary-color--);
+  border-color: gold;
   border-width: 10px;
 }
 
@@ -655,7 +691,7 @@ textarea,input{
     }
   }
   nav{
-    display: flex;
+    display: block;
   }
   .ad-card-image{
     width: 90%;
