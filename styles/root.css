@@ -284,7 +284,7 @@ h1{
 /*----------------------------------------------------------------------------------------------------------------*/
 .ads-500x500{
   position: relative;
-  margin-top: 10px;
+  margin:0 20px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
   grid-gap: 40px;
