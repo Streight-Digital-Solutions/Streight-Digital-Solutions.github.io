@@ -1234,7 +1234,7 @@ textarea,input{
 
 @property --num7 {
   syntax: "<integer>";
-  initial-value: 40;
+  initial-value: 20;
   inherits: false;
 }
 .template-price {
@@ -1263,7 +1263,7 @@ textarea,input{
     --num7: 0;
   }
   to {
-    --num7: 40;
+    --num7: 20;
   }
 }
 
