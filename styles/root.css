@@ -243,6 +243,7 @@ h1{
     text-align: center;
 }
 .item-details{
+    padding: 0 5vw;
     color: #070909;
     font-family: "Oxanium", sans-serif, bold;
     font-size: 24px;
@@ -464,9 +465,9 @@ h1{
 }
 .youtube{
   display:flex;
-  margin: 10% auto;
+  margin: 1vw auto;
   width:90%;
-  height:226px;
+  height:30vh;
   border-radius: 10px;
 }
 .store-item-image {
@@ -479,9 +480,10 @@ h1{
 
 .item-cards {
   max-width: 100%;
+  height: fit-content;
   margin: 1px auto;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
   justify-self: center;
   align-self: center;
   grid-gap: 50px;
@@ -1237,7 +1239,7 @@ textarea,input{
   initial-value: 5;
   inherits: false;
 }
-.template-price {
+.template-price-discount {
   animation: counter7 2s  alternate ease-in-out;
   transition: --num7 1s;
   counter-reset: none;
@@ -1267,4 +1269,38 @@ textarea,input{
   }
 }
 
+@property --num8 {
+  syntax: "<integer>";
+  initial-value: 15;
+  inherits: false;
+}
+.template-price {
+  animation: counter8 2s  alternate ease-in-out;
+  transition: --num8 1s;
+  counter-reset: none;
+  counter-reset: num var(--num8);
+  text-align: center;
+  font-size: 48px;
+  background: -webkit-linear-gradient(#000000, #023939);
+  font-family: "Orbitron", sans-serif;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  &:after{
+    content: counter(num);
+  }
+  &:hover{
+    background: -webkit-linear-gradient(#fcd913, #242f02);
+    font-family: "Orbitron", sans-serif;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+@keyframes counter7 {
+  from {
+    --num8: 0;
+  }
+  to {
+    --num8: 15;
+  }
+}
 
