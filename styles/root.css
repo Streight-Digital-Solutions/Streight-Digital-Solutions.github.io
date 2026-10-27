@@ -66,7 +66,11 @@ section{
   object-fit: cover;
   z-index: -1;
 }
-
+.ad-video{
+  position: fixed;
+  object-fit: cover;
+  z-index: -1;
+}
 img.logo {
     position: relative;
     display: block;
