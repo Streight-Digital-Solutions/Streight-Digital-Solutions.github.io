@@ -20,7 +20,7 @@
 
     <!-- LINKS  -->
     <link rel="icon" type="image/png" href="/assets/images/favicon.png"/>
-    <link rel="stylesheet" href="../styles/root.css">
+    <link rel="stylesheet" href="./styles/root.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css?family=Orbitron|Oxanium" rel="stylesheet">
@@ -48,36 +48,46 @@
 
 
     <body>
-        <div class="hero">
-            <!-- Branding -->
-            <div class="branding">
-                <img class="logo" href="#home" src="../assets/images/logo.png" alt="logo">
-                <audio src="assets/audio/click.mp3" id="sound"></audio>
-            <!-- Navigation -->
-                <nav id="nav">
-                    <a class="active" id="nav-link" href="index.html">Home</a>
-                    <a id="nav-link" href="./pages/pricing.html">Pricing</a>
-                    <a id="nav-link" href="./pages/terms.html">Terms</a>
-                    <a id="nav-link" href="./pages/contact.html">Contact</a>
-                    <a id="nav-link" href="./pages/advertise.html">Advertise</a>
-                    <a id="nav-link" href="./pages/store.html">Store</a>
-                </nav>
+        <!-- Background Video -->
+        <video autoplay muted loop class="video">
+            <source src="./assets/videos/backgroundvideo.mp4" type="video/mp4">
+        </video>
+
+
+            <div id="popup">
+                <h1>Attention</h1>
+                <p>This website contains highly vibrant colors and video. 
+                Light sensitive viewers please be advised.</p>
+                <button class="popup-button" onclick="remove();">Noted</button>
+            </div>
+            <div class="hero">
+                <!-- Branding -->
+                <div class="branding">
+                    <img class="logo" href="#home" src="./assets/images/logo.png" alt="logo">
+                    <audio src="assets/audio/click.mp3" id="sound"></audio>
+                <!-- Navigation -->
+                    <nav>
+                        <a class="active" id="nav-link" href="index.html">Home</a>
+                        <a id="nav-link" href="./pages/pricing.html">Pricing</a>
+                        <a id="nav-link" href="./pages/terms.html">Terms</a>
+                        <a id="nav-link" href="./pages/contact.html">Contact</a>
+                        <a id="nav-link" href="./pages/advertise.html">Advertise</a>
+                        <a id="nav-link" href="./pages/store.html">Store</a>
+                    </nav>
+                </div>
             </div>
 
-            <!-- Background Video -->
-            <video autoplay muted loop class="background-video">
-                <source src="../assets/videos/backgroundvideo.mp4" type="video/mp4">
-            </video>
-        </div>
-        <footer>
-            <p class="copyright">© Streight Digital Solutions. All rights reserved.</p>
-            <div class="socials"> 
-                <a class="social-link" href="https://www.facebook.com/profile.php?id=61594302479451"><img class="social-icon"  src="../assets/images/Facebook_Logo_Blue.png"></img></a>
-                <a class="social-link" href="https://www.instagram.com/streightdigital/"><img class="social-icon"  src="../assets/images/Instagram_Glyph_Blue.png"></img></a>
-                <a class="social-link" href="https://www.tiktok.com/@streight.digital?is_from_webapp=1&sender_device=pc"><img class="social-icon"  src="../assets/images/TikTok_Icon_Blue.png"></img></a>
-            </div>
-        </footer>
+            <footer>
+                <p class="copyright">© Streight Digital Solutions. All rights reserved.</p>
+                <div class="socials"> 
+                    <a class="social-link" href="https://www.facebook.com/profile.php?id=61594302479451"><img class="social-icon"  src="./assets/images/Facebook_Logo_Blue.png"></img></a>
+                    <a class="social-link" href="https://www.instagram.com/streightdigital/"><img class="social-icon"  src="./assets/images/Instagram_Glyph_Blue.png"></img></a>
+                    <a class="social-link" href="https://www.tiktok.com/@streight.digital?is_from_webapp=1&sender_device=pc"><img class="social-icon"  src="./assets/images/TikTok_Icon_Blue.png"></img></a>
+                </div>
+            </footer>
 
+
+       
     </body>
     
     <!-- SCRIPTS  -->

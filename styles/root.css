@@ -5,20 +5,51 @@
   --primary-color--: #00ffff;
   --secondary-color--:#09516d73;
   --tertiary-color--:#2b4046a4;
+
+  --primary-font--:"Orbitron", sans-serif;
+}
+
+#popup{
+  visibility: visible;
+  position: absolute;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: var(--primary-color--);
+  background-color: #b02a2af1;
+  z-index: 1;
+  h1{
+    margin:80vw auto 0 auto;
+  }
+  h1,p{
+    font-family: var(--primary-font--);
+    color: #ffbc03;
+  }
+  p{
+    margin:0 1vw;
+
+  }
 }
 
 .hero {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 0;
 
 }
 .branding{
+  position: relative;
   display: block;
   max-width: fit-content;
+  z-index: 0;
 }
 
-body{
+body,html{
+  width: 100%;
+  height: 100%;
   margin: 0;
   padding:0;
   overflow-x: hidden;
@@ -27,21 +58,23 @@ section{
   margin-top: 50px;
   height:auto;
   padding-top: 0;
-
+  z-index: 0;
 }
 
-.background-video {
-    position: fixed;
-    z-index: -1;
+.video{
+  position: fixed;
+  object-fit: cover;
+  z-index: -1;
 }
 
 img.logo {
+    position: relative;
     display: block;
     margin: 40px auto;
     width: 500px;
     height: 500px;
     border-radius: 50%;
-    z-index: 2;
+    z-index: 0;
     filter: drop-shadow(0 0 0.75rem var(--primary-color--));
   &:hover{
     animation: glow 1s ease-in-out infinite alternate;
@@ -58,6 +91,8 @@ nav {
   border: solid var(--tertiary-color--);
   border-radius: 10px;
   margin: 50px;
+  z-index: 0;
+  
 }
 
 nav a {
@@ -70,7 +105,7 @@ nav a {
   text-decoration: none;
   font-size: 24px;
   font-family: "Orbitron", sans-serif;
-  z-index: 3;
+  z-index: 0;
   border-radius: 10px;
 }
 
@@ -91,7 +126,8 @@ nav a.active {
   border-color: var(--primary-color--);
   border: solid var(--tertiary-color--);
   border-radius: 10px;
-  margin: 50px;
+  margin: auto;
+  z-index: 0;
 }
 
 .desktop-nav a {
@@ -104,7 +140,7 @@ nav a.active {
   text-decoration: none;
   font-size: 24px;
   font-family: "Orbitron", sans-serif;
-  z-index: 3;
+  z-index: 0;
   border-radius: 10px; 
 }
 
@@ -137,7 +173,7 @@ nav a.active {
   font-size: 40px;
   margin:5px;
   font-family: "Orbitron";
-  z-index: 3;
+  z-index: 0;
   border-color: #daf10923;
   border-radius: 20px;
   border-width: 10px;
@@ -182,7 +218,7 @@ h1{
     color: var(--primary-color--);
     font-family: "Orbitron", sans-serif;
     font-size: 100px;
-    z-index: 2;
+    z-index: 0;
     font-size: 80px;
     text-align: center;
     margin-bottom: 50px;
@@ -193,7 +229,7 @@ h1{
     color: var(--primary-color--);
     font-family: "Orbitron", sans-serif;
     font-size: 50px;
-    z-index: 2;
+    z-index: 0;
 }
 
 .p{
@@ -202,7 +238,7 @@ h1{
     color: var(--primary-color--);
     font-family: "Orbitron", sans-serif;
     font-size: 20px;
-    z-index: 2;
+    z-index: 0;
 }
 .glowing-title {
     display: block;
@@ -210,7 +246,7 @@ h1{
     color: var(--primary-color--);
     font-family: "Orbitron", sans-serif;
     font-size: 150px;
-    z-index: 2;
+    z-index: 0;
     text-align: center;
     animation: glow 9s ease-in-out infinite alternate;
 }
@@ -219,7 +255,7 @@ h1{
     color: var(--primary-color--);
     font-family: "Orbitron", sans-serif;
     font-size: 100px;
-    z-index: 2;
+    z-index: 0;
     font-size: 80px;
     text-align: center;
     animation: glow 1s ease-in-out infinite alternate;
@@ -229,7 +265,7 @@ h1{
     color: var(--primary-color--);
     font-family: "Orbitron", sans-serif;
     font-size: 100px;
-    z-index: 2;
+    z-index: 0;
     font-size: 80px;
     text-align: center;
     margin-bottom: 50px;
@@ -239,7 +275,7 @@ h1{
     color: #011f27;
     font-family: "Orbitron", sans-serif;
     font-size: 70px;
-    z-index: 2;
+    z-index: 0;
     text-align: center;
 }
 .item-details{
@@ -258,13 +294,34 @@ h1{
   color: #242701;
   font-family: "Times New Roman", sans-serif;
   font-size: 70px;
-  z-index: 2;
+  z-index: 0;
   text-align: center;
 }
 
 /*----------------------------------------------------------------------------------------------------------------*/
 /*--------------------------------------------   BUTTONS  --------------------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------------------*/
+
+
+.popup-button {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 50px;
+    width: fit-content;
+    margin:10px;
+    background-color: #5a4200;
+    color: #ffbc03;
+    border-radius: 5px;
+    border-color: #ffbc03;
+    font-size: 20px;
+    font-family: "Orbitron", sans-serif;
+    &:hover{
+      border-color: #b02a2a9f;
+      background-color: #b02a2a;
+      color:rgb(68, 0, 0);
+    }
+}
 
 .action-button {
     justify-content: center;
@@ -493,7 +550,7 @@ h1{
     color: #011f27;
     font-family: "Orbitron", sans-serif;
     font-size: 70px;
-    z-index: 2;
+    z-index: 0;
     text-align: center;
 }
 .web-card-title {
@@ -501,7 +558,7 @@ h1{
     color: #011f27;
     font-family: "Orbitron", sans-serif;
     font-size: 70px;
-    z-index: 2;
+    z-index: 0;
     text-align: center;
 }
 
@@ -522,7 +579,7 @@ html{
     color: #23464f;
     font-family: "Orbitron", sans-serif;
     font-size: 50px;
-    z-index: 2;
+    z-index: 0;
 }
 .term-description{
     margin: 10px 10px 10px 10px;
@@ -531,7 +588,7 @@ html{
     color: #23464f;
     font-family: "Orbitron", sans-serif;
     font-size: 20px;
-    z-index: 2;
+    z-index: 0;
 }
 .term {
     border-color: #101414;
@@ -541,7 +598,7 @@ html{
     color: #2f6370;
     font-family: "Orbitron", sans-serif;
     font-size: 50px;
-    z-index: 2;
+    z-index: 0;
     background-color: #00ffffc5;
     border-radius: 10px;
     margin: 0 9%; 
@@ -619,7 +676,7 @@ textarea,input{
   align-items: center;
   background-color: #0b3a5200;
   color:#abad0f73;
-  z-index: 1;
+  z-index: 0;
   
 }
 .ad-copyright{
@@ -644,12 +701,12 @@ textarea,input{
 
 }
 .footer {
+  position: relative;
   height: 100px;
   display:block;
   align-items: center;
   background-color: #0b3a5200;
   color:var(--primary-color--);
-  z-index: 1;
   align-content: center;
   align-self: center;
   
@@ -662,11 +719,11 @@ textarea,input{
 .socials {
  display: flex;
  justify-content: center;
-
 }
 .social-icon {
   margin: 10px;
   max-width: 50px;
+  z-index: 0;
     &:hover{
     height: 50px;
     max-width: 100px;
@@ -677,6 +734,7 @@ textarea,input{
 }
 .social-link{
   max-width: fit-content;
+  z-index: 0;
 }
 
 /*----------------------------------------------------------------------------------------------------------------*/
@@ -862,18 +920,28 @@ textarea,input{
   }
   .desktop-nav{
     display: block;
-    margin: 20px;
+    margin: 0 auto;
   }
-  body{
+  body,html{
+    height: 100%;
     max-width: 600px;
   }
+  .video{
+    height: 100%;
+  }
+  .branding{
+    width: fit-content;
+  }
   .ad-nav{
+    margin-top:5vw;
     width:90%;
-    margin:0 auto;
     display: block;
-    padding: 20px;
     border-radius: 20px;
     }
+
+  #popup{
+    height:100%;
+  }
   .ad-nav a{
     display: block;
     font-size: 15px;
@@ -896,7 +964,8 @@ textarea,input{
     }
   }
   .ad-slider{
-    height: 100%;
+    margin-top: 4vw;
+    height: fit-content;
     width: 300%;
     gap: 20px;
   }
@@ -1304,3 +1373,38 @@ textarea,input{
   }
 }
 
+
+@property --num9 {
+  syntax: "<integer>";
+  initial-value: 2;
+  inherits: false;
+}
+.theme-price {
+  animation: counter9 2s  alternate ease-in-out;
+  transition: --num9 1s;
+  counter-reset: none;
+  counter-reset: num var(--num9);
+  text-align: center;
+  font-size: 48px;
+  background: -webkit-linear-gradient(#000000, #023939);
+  font-family: "Orbitron", sans-serif;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  &:after{
+    content: counter(num);
+  }
+  &:hover{
+    background: -webkit-linear-gradient(#fcd913, #242f02);
+    font-family: "Orbitron", sans-serif;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+@keyframes counter9 {
+  from {
+    --num9: 0;
+  }
+  to {
+    --num9: 2;
+  }
+}

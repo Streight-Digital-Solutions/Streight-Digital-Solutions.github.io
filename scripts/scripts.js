@@ -1,3 +1,7 @@
+const popup = document.getElementById("popup");
+function remove(){ 
+    popup.style.visibility = "hidden";
+}
 // FUNCTION THAT PLAYS THE UNIVERSAL SOUND EFFECT
 function playMusic(){
     var audio = new Audio("../assets/audio/click.mp3");
@@ -49,3 +53,4 @@ form.addEventListener('submit', async (e) => {
         submitBtn.disabled = false;
     }
 });
+
