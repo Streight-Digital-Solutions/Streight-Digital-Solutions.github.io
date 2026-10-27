@@ -920,7 +920,7 @@ textarea,input{
   }
   .desktop-nav{
     display: block;
-    margin: 0 auto;
+    margin: auto;
   }
   body,html{
     height: 100%;
