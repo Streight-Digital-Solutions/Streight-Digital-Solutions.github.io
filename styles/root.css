@@ -20,7 +20,7 @@
   background-color: #b02a2af1;
   z-index: 1;
   h1{
-    margin:80vw auto 0 auto;
+    margin:20% auto 0 auto;
   }
   h1,p{
     font-family: var(--primary-font--);
