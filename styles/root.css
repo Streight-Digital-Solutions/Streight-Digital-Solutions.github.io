@@ -1064,6 +1064,10 @@ footer {
       height: 200px;
       width: 350px;
   }
+  .ad-card-title{
+    font-size: 5vw;
+    margin:1vw;
+  }
 
   .ad-slider-image {
     height: 100%;
