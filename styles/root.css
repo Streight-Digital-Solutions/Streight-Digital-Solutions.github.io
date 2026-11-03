@@ -925,6 +925,10 @@ footer {
 
   #popup{
     height:100%;
+    h1{
+      margin-top:50vw;
+      font-size: 10vw;
+    }
   }
 
   .ad-nav a{
