@@ -9,6 +9,14 @@
   --primary-font--:"Orbitron", sans-serif;
 }
 
+.mask{
+  position: absolute;
+  width: 100%;
+  height: fit-content;
+  background-color: #00000094;
+  z-index: 0;
+}
+
 #popup{
   visibility: visible;
   position: absolute;
@@ -38,46 +46,51 @@
   justify-content: center;
   align-items: center;
   z-index: 0;
-
 }
+
 .branding{
   position: relative;
   display: block;
-  max-width: fit-content;
+  width: 30%;
   z-index: 0;
 }
 
-body,html{
+.nav-container{
+  justify-content: center;
   width: 100%;
-  height: 100%;
+  display: flex;
+}
+
+body,html{
   margin: 0;
   padding:0;
   overflow-x: hidden;
 }
 section{
   margin-top: 50px;
-  height:auto;
+  height:fit-content;
   padding-top: 0;
   z-index: 0;
 }
 
 .video{
-  position: fixed;
   object-fit: cover;
+  position: fixed;
   z-index: -1;
 }
+
 .ad-video{
-  position: fixed;
   object-fit: cover;
+  position: fixed;
   z-index: -1;
 }
+
 img.logo {
     position: relative;
     display: block;
-    margin: 40px auto;
-    width: 500px;
-    height: 500px;
-    border-radius: 50%;
+    margin: 4.5vw auto;
+    width: 15vw;
+    height: 15vw;
     z-index: 0;
     filter: drop-shadow(0 0 0.75rem var(--primary-color--));
   &:hover{
@@ -94,7 +107,7 @@ nav {
   border-color: var(--primary-color--);
   border: solid var(--tertiary-color--);
   border-radius: 10px;
-  margin: 50px;
+  margin: 3.4vw;
   z-index: 0;
   
 }
@@ -108,7 +121,7 @@ nav a {
   padding:5px 10px;
   text-decoration: none;
   font-size: 24px;
-  font-family: "Orbitron", sans-serif;
+  font-family: var(--primary-font--);
   z-index: 0;
   border-radius: 10px;
 }
@@ -132,6 +145,7 @@ nav a.active {
   border-radius: 10px;
   margin: auto;
   z-index: 0;
+  width: fit-content;
 }
 
 .desktop-nav a {
@@ -143,7 +157,7 @@ nav a.active {
   padding:5px 10px;
   text-decoration: none;
   font-size: 24px;
-  font-family: "Orbitron", sans-serif;
+  font-family: var(--primary-font--);
   z-index: 0;
   border-radius: 10px; 
 }
@@ -159,41 +173,34 @@ nav a.active {
   border: solid var(--primary-color--);
 }
 
-
 .ad-nav {
   display:flex;
   background-color: #7a5202f2;
-  padding: 10px;
-  border-radius: 20px;
+  padding: 0.5vw;
+  width: fit-content;
+  border-radius: 2.5vw;
   justify-content: center;
-  align-items: center;
-  align-self: center;
 }
 .ad-nav a {
   color: #121010;
   text-align: center;
   align-items: center;
   text-decoration: none;
-  font-size: 40px;
-  margin:5px;
-  font-family: "Orbitron";
+  font-size: 1vw;
   z-index: 0;
   border-color: #daf10923;
-  border-radius: 20px;
-  border-width: 10px;
+  border-radius: 2vw;
   border-style: groove;
 }
 .ad-nav a:hover {
   background-image: linear-gradient(to right,#cdf00441,#00000053);
   color: #fffefee9;
   border-color: gold;
-  border-width: 10px;
 }
 .ad-nav a.active {
   background-image: linear-gradient(to right,var(--primary-color),#00000053);
   color: #fdfafa;
   border-color: gold;
-  border-width: 10px;
 }
 
 
@@ -215,15 +222,15 @@ a{
 h1{
   margin: 0;
   color: var(--primary-color--);
-  font-family: "Orbitron", sans-serif;
+  font-family: var(--primary-font--);
+  font-size: 3vw;
 }
 .title {
     display: block;
     color: var(--primary-color--);
-    font-family: "Orbitron", sans-serif;
-    font-size: 100px;
+    font-family: var(--primary-font--);
     z-index: 0;
-    font-size: 80px;
+    font-size: 4vw;
     text-align: center;
     margin-bottom: 50px;
 }
@@ -231,7 +238,7 @@ h1{
     padding-left: 50px;
     display: block;
     color: var(--primary-color--);
-    font-family: "Orbitron", sans-serif;
+    font-family: var(--primary-font--);
     font-size: 50px;
     z-index: 0;
 }
@@ -240,7 +247,7 @@ h1{
     padding-left: 50px;
     display: block;
     color: var(--primary-color--);
-    font-family: "Orbitron", sans-serif;
+    font-family: var(--primary-font--);
     font-size: 20px;
     z-index: 0;
 }
@@ -248,7 +255,7 @@ h1{
     display: block;
     margin-bottom: 80px;
     color: var(--primary-color--);
-    font-family: "Orbitron", sans-serif;
+    font-family: var(--primary-font--);
     font-size: 150px;
     z-index: 0;
     text-align: center;
@@ -257,7 +264,7 @@ h1{
 .glowing-title:hover {
     display: block;
     color: var(--primary-color--);
-    font-family: "Orbitron", sans-serif;
+    font-family: var(--primary-font--);
     font-size: 100px;
     z-index: 0;
     font-size: 80px;
@@ -267,7 +274,7 @@ h1{
 .store-title {
     display: block;
     color: var(--primary-color--);
-    font-family: "Orbitron", sans-serif;
+    font-family: var(--primary-font--);
     font-size: 100px;
     z-index: 0;
     font-size: 80px;
@@ -277,7 +284,7 @@ h1{
 .store-item-title {
     display: block;
     color: #011f27;
-    font-family: "Orbitron", sans-serif;
+    font-family: var(--primary-font--);
     font-size: 70px;
     z-index: 0;
     text-align: center;
@@ -319,7 +326,7 @@ h1{
     border-radius: 5px;
     border-color: #ffbc03;
     font-size: 20px;
-    font-family: "Orbitron", sans-serif;
+    font-family: var(--primary-font--);
     &:hover{
       border-color: #b02a2a9f;
       background-color: #b02a2a;
@@ -328,35 +335,28 @@ h1{
 }
 
 .action-button {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 50px;
-    width: 50px;
-    margin:10px;
-    background-color: #00000088;
-    color: var(--primary-color--);
-    border-radius: 5px;
-    border-color: var(--primary-color--);
-    font-size: 20px;
-    font-family: "Orbitron", sans-serif;
-}
-
-.action-button:hover {
-    height: 50px;
-    width:100%;
-    margin:10px;
-    padding: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 50px;
+  width: 50px;
+  margin:10px;
+  background-color: #00000088;
+  color: var(--primary-color--);
+  border-radius: 5px;
+  border-color: var(--primary-color--);
+  font-size: 1vw;
+  font-family: var(--primary-font--);
+  width: 20vw;
+  &:hover{
     background-color: var(--primary-color--);
     color: #000000;
-    border-radius: 5px;
-    border-color: var(--primary-color--);
-    font-size: 20px;
-    font-family: "Orbitron", sans-serif;
     a {
       color: #000000;
     }
+  }
 }
+
 
 .buy-button {
     display:block;
@@ -371,7 +371,7 @@ h1{
     border-radius: 5px;
     border-color: var(--primary-color--);
     font-size: 20px;
-    font-family: "Orbitron", sans-serif;
+    font-family: var(--primary-font--);
     &:hover{
         background-color: var(--primary-color--);
         color: #000000;
@@ -390,28 +390,27 @@ h1{
 }
 
 .ad-slider{
+  margin-top:1vw;
   overflow: hidden;
   position: relative;
   display: flex;
   width: 300%;
-  gap: 13px;
-  height: 100%;
+  gap: 2vw;
+  height: fit-content;
   animation: slider 50s infinite;
 }
 .slider-ad-card {
+  border-radius: 2vw;
   overflow: hidden;
   display: grid;
   width: 100%;
-  height: 100%;
+  height: fit-content;
   border: 5px solid var(--primary-color);
   align-items: center;
-  margin-top: 20PX;;
-  margin-bottom: 20px;
-  border-radius: 20px;
   background-color: #a99e6fa1;
   &:hover{
-    border: 5px solid  var(--primary-color--);
-    background-color: var(--secondary-color--);
+    border: 5px solid  #ff8e03;
+    background-color: #ff89033a;
     }
   }
 
@@ -434,12 +433,12 @@ h1{
   border-radius: 20px;
   background-color: #f5f5f04f;
   &:hover{
-    border: 5px solid  var(--primary-color--);
-    background-color: var(--secondary-color--);
+    border: 5px solid  #ff8e03;
+    background-color: #ff8903e9;
     .ad-card-title,
     .ad-card-description{
     font-family: "Tangerine", sans-serif;
-    font-size: 40px;
+    font-size: 4vw;
     color: #ffffff;
     }
   }
@@ -472,7 +471,7 @@ h1{
     border: 5px solid  var(--secondary-color--);
     background-color: var(--tertiary-color--);
     background: linear-gradient(#161615, #067990);
-    font-family: "Orbitron", sans-serif;
+    font-family: var(--primary-font--);
     .store-item-title{
       color:var(--primary-color--)
     }
@@ -481,10 +480,11 @@ h1{
 
 .card {
   border: 5px solid  var(--primary-color--);
-  border-radius: 3px;
+  border-radius: 2vw;
   background-color: var(--primary-color--);
   align-items: center;
-  margin: 10px 5%; 
+  margin: 2vw 2vw;
+ 
   &:hover{
     border: 5px solid  var(--secondary-color--);
     background-color: var(--tertiary-color--);
@@ -497,7 +497,7 @@ h1{
     .pos-price,
     .logo-price{
     background: -webkit-linear-gradient(#fcd913, #6d9006);
-    font-family: "Orbitron", sans-serif;
+    font-family: var(--primary-font--);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     }
@@ -552,7 +552,7 @@ h1{
 .card-title {
     display: block;
     color: #011f27;
-    font-family: "Orbitron", sans-serif;
+    font-family: var(--primary-font--);
     font-size: 70px;
     z-index: 0;
     text-align: center;
@@ -560,7 +560,7 @@ h1{
 .web-card-title {
     display: block;
     color: #011f27;
-    font-family: "Orbitron", sans-serif;
+    font-family: var(--primary-font--);
     font-size: 70px;
     z-index: 0;
     text-align: center;
@@ -578,11 +578,11 @@ html{
 }
 
 .term-title{
-    padding-left: 10px;
+    
     display: block;
     color: #23464f;
-    font-family: "Orbitron", sans-serif;
-    font-size: 50px;
+    font-family: var(--primary-font--);
+    font-size: 3vw;
     z-index: 0;
 }
 .term-description{
@@ -590,7 +590,7 @@ html{
     padding-bottom: 20px;
     display: block;
     color: #23464f;
-    font-family: "Orbitron", sans-serif;
+    font-family: var(--primary-font--);
     font-size: 20px;
     z-index: 0;
 }
@@ -600,7 +600,7 @@ html{
     padding-left: 5px;
     display: block;
     color: #2f6370;
-    font-family: "Orbitron", sans-serif;
+    font-family: var(--primary-font--);
     font-size: 50px;
     z-index: 0;
     background-color: #00ffffc5;
@@ -646,7 +646,7 @@ input,textarea{
   background-color: #00ffff75;
   border-color: var(--primary-color--);
   font-size: 20px;
-  font-family: "Orbitron", sans-serif;
+  font-family: var(--primary-font--);
   align-items: center;
   &:hover{
     background-color: var(--primary-color--);
@@ -662,9 +662,10 @@ textarea,input{
   width: 80%;
 }
 .form-headings{
+  font-size: 2vw;
   margin: 20px;
   color: #64d0eb;
-  font-family: "Orbitron", sans-serif;
+  font-family: var(--primary-font--);
 }
 /*----------------------------------------------------------------------------------------------------------------*/
 /*--------------------------------------------   FOOTER  ---------------------------------------------------------*/
@@ -685,7 +686,7 @@ textarea,input{
 }
 .ad-copyright{
   color: var(--primary-color);
-  font-family: "Orbitron", sans-serif;
+  font-family: var(--primary-font--);
   text-align: center;
 }
 .ad-socials {
@@ -693,37 +694,38 @@ textarea,input{
  justify-content: center;
 
 }
-.ad-social-icon{
+
+.ad-social-icon {
   margin: 10px;
   max-width: 40px;
   &:hover{
     height: 50px;
     max-width: 100px;
-    animation: glow 5s ease-in-out infinite alternate;
-    filter: drop-shadow(0 0 0.75rem #ffb300);
+    filter: drop-shadow(0 0 0.75rem #ff8903e9);
   }
-
 }
-.footer {
+
+footer {
+  margin: 1vw auto;
   position: relative;
-  height: 100px;
+  bottom:0;
   display:block;
-  align-items: center;
   background-color: #0b3a5200;
   color:var(--primary-color--);
-  align-content: center;
-  align-self: center;
-  
+  width: 100%;
 }
+
 .copyright{
   color: var(--primary-color--);
-  font-family: "Orbitron", sans-serif;
+  font-family: var(--primary-font--);
   text-align: center;
 }
 .socials {
  display: flex;
  justify-content: center;
+ padding-bottom: 1vw;
 }
+
 .social-icon {
   margin: 10px;
   max-width: 50px;
@@ -734,8 +736,8 @@ textarea,input{
     animation: glow 5s ease-in-out infinite alternate;
     filter: drop-shadow(0 0 0.75rem #00fbff);
   }
-
 }
+
 .social-link{
   max-width: fit-content;
   z-index: 0;
@@ -748,12 +750,7 @@ textarea,input{
   body{
     max-width: 2200px;
   }
-  .action-button{
-    width:80%;
-    &:hover{
-      width:80%;
-    }
-  }
+
   nav{
     display: block;
   }
@@ -761,23 +758,18 @@ textarea,input{
     width: 90%;
     height: 90%;
   } 
-  img.logo{
-    width: 80%;
-    height: 80%;
-  } 
+ 
   .glowing-title,.glowing-title:hover,.title{ 
     font-size: 300%;
   }
   .card-title,.web-card-title,.ad-card-title{
     font-size: 250%;
   }
- .ad-nav,.terms-buttons{
+  .terms-buttons{
     width:100%;
     font-size: 30px;
   }
-  .action-button,.action-button:hover{
-    font-size: 70%;
-  }
+
 }
 @media screen and (max-width: 1500px) {
   body{
@@ -788,11 +780,6 @@ textarea,input{
     height: 100%;
   } 
 
-  img.logo{
-    width: 50%;
-    height: 50%;
-  } 
-
   .glowing-title,.glowing-title:hover{
     font-size: 300%;
   }
@@ -801,21 +788,12 @@ textarea,input{
     grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
   }
 
-  .title,.card-title{
+  .card-title{
     font-size: 100%;
   }
 
   .card-title{
     font-size: 100%;
-  }
-
-  .nav,.ad-nav,.terms-buttons,.action-button,.action-button:hover{
-    width:100%;
-    font-size: 100%;
-  }
-
-  .action-button,.action-button:hover{
-    font-size: 70%;
   }
 
   .youtube{
@@ -826,6 +804,7 @@ textarea,input{
     border-radius: 10px;
   }
 }
+
 @media screen and (max-width: 1080px) {
 
   body{
@@ -835,11 +814,8 @@ textarea,input{
     width: 100%;
     height: 100%;
   } 
-  img.logo{
-    width: 50%;
-    height: 50%;
-  } 
-  .glowing-title,.glowing-title:hover,.title{ 
+
+  .glowing-title,.glowing-title:hover{ 
     font-size: 100%;
   }
   .card-title{
@@ -848,7 +824,7 @@ textarea,input{
   .web-card-title,.ad-card-title{
     font-size: 200%;
   }
-  .nav,.ad-nav,.terms-buttons,.action-button,.action-button:hover{
+  .nav,.terms-buttons,.action-button,.action-button:hover{
     width:100%;
     font-size: 100%;
   }
@@ -879,11 +855,7 @@ textarea,input{
     height: 100%;
   } 
 
-  img.logo{
-    width: 50%;
-    height: 50%;
-  } 
-  .glowing-title,.glowing-title:hover,.title{ 
+  .glowing-title,.glowing-title:hover{ 
     font-size: 300%;
   }
   .card-title{
@@ -895,7 +867,7 @@ textarea,input{
   .web-card-title{
     font-size: 200%;
   }
-  .ad-nav,.terms-buttons,.action-button,.action-button:hover{
+  .terms-buttons,.action-button,.action-button:hover{
     width:100%;
   }
   .action-button,.action-button:hover{
@@ -919,44 +891,56 @@ textarea,input{
   }
 }
 @media screen and (max-width: 600px) {
-  nav{
-    display: block;
-  }
+
   .desktop-nav{
     display: block;
     margin: auto;
   }
+
   body,html{
     height: 100%;
     max-width: 600px;
   }
-  .video{
-    height: 100%;
+
+  img.logo{
+    padding-top: 8vw;
+    height:50vw;
+    width:50vw;
   }
+
+  nav{
+    margin: 20vw 0;
+  }
+  
   .branding{
-    width: fit-content;
+    width: 70%;
   }
+
   .ad-nav{
     margin-top:5vw;
-    width:90%;
+    width:50%;
     display: block;
     border-radius: 20px;
-    }
+  }
 
   #popup{
     height:100%;
   }
+
   .ad-nav a{
     display: block;
-    font-size: 15px;
+    font-size: 2.5vw;
   }
+
   .ad-card img{
     width: 100%;
     height: 100%;
   }
+
   .ad-card-title{
     font-size: 15px;
   }
+
   .ad-card {
     &:hover{
       .ad-card-title,
@@ -967,6 +951,7 @@ textarea,input{
       }
     }
   }
+
   .ad-slider{
     margin-top: 4vw;
     height: fit-content;
@@ -977,31 +962,29 @@ textarea,input{
   .ads-500x500{
     grid-gap: 19px;
   }
+
   .slider-ad-card {
       height: 200px;
       width: 350px;
   }
+
   .ad-slider-image {
     height: 100%;
     width: 350px;
   }
-  nav{
-    width:90%;
-    margin:0 auto;
-  }
-  img.logo{
-    width: 50%;
-    height: 50%;
-  } 
+
   .glowing-title,.glowing-title:hover,.title{ 
     font-size: 200%;
   }
+
   .card-title{
     font-size: 100%;
   }
+
   .web-card-title{
     font-size: 200%;
   }
+
   .store-item-title{
     font-size: 40px;
   }
@@ -1109,7 +1092,7 @@ textarea,input{
   text-align: center;
   font-size: 48px;
   background: -webkit-linear-gradient(#000000, #023939);
-  font-family: "Orbitron", sans-serif;
+  font-family: var(--primary-font--);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   &:after{
@@ -1117,7 +1100,7 @@ textarea,input{
   }
   &:hover{
     background: -webkit-linear-gradient(#fcd913, #242f02);
-    font-family: "Orbitron", sans-serif;
+    font-family: var(--primary-font--);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -1144,7 +1127,7 @@ textarea,input{
   text-align: center;
   font-size: 48px;
   background: -webkit-linear-gradient(#000000, #023939);
-  font-family: "Orbitron", sans-serif;
+  font-family: var(--primary-font--);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   &:after{
@@ -1152,7 +1135,7 @@ textarea,input{
   }
   &:hover{
     background: -webkit-linear-gradient(#fcd913, #242f02);
-    font-family: "Orbitron", sans-serif;
+    font-family: var(--primary-font--);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -1179,7 +1162,7 @@ textarea,input{
   text-align: center;
   font-size: 48px;
   background: -webkit-linear-gradient(#000000, #023939);
-  font-family: "Orbitron", sans-serif;
+  font-family: var(--primary-font--);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   &:after{
@@ -1187,7 +1170,7 @@ textarea,input{
   }
   &:hover{
     background: -webkit-linear-gradient(#fcd913, #242f02);
-    font-family: "Orbitron", sans-serif;
+    font-family: var(--primary-font--);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -1214,7 +1197,7 @@ textarea,input{
   text-align: center;
   font-size: 48px;
   background: -webkit-linear-gradient(#000000, #023939);
-  font-family: "Orbitron", sans-serif;
+  font-family: var(--primary-font--);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   &:after{
@@ -1222,7 +1205,7 @@ textarea,input{
   }
   &:hover{
     background: -webkit-linear-gradient(#fcd913, #242f02);
-    font-family: "Orbitron", sans-serif;
+    font-family: var(--primary-font--);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -1250,7 +1233,7 @@ textarea,input{
   text-align: center;
   font-size: 48px;
   background: -webkit-linear-gradient(#000000, #023939);
-  font-family: "Orbitron", sans-serif;
+  font-family: var(--primary-font--);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   &:after{
@@ -1258,7 +1241,7 @@ textarea,input{
   }
   &:hover{
     background: -webkit-linear-gradient(#fcd913, #242f02);
-    font-family: "Orbitron", sans-serif;
+    font-family: var(--primary-font--);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -1284,7 +1267,7 @@ textarea,input{
   text-align: center;
   font-size: 48px;
   background: -webkit-linear-gradient(#000000, #023939);
-  font-family: "Orbitron", sans-serif;
+  font-family: var(--primary-font--);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   &:after{
@@ -1292,7 +1275,7 @@ textarea,input{
   }
   &:hover{
     background: -webkit-linear-gradient(#fcd913, #242f02);
-    font-family: "Orbitron", sans-serif;
+    font-family: var(--primary-font--);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -1320,7 +1303,7 @@ textarea,input{
   text-align: center;
   font-size: 48px;
   background: -webkit-linear-gradient(#000000, #023939);
-  font-family: "Orbitron", sans-serif;
+  font-family: var(--primary-font--);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   &:after{
@@ -1328,7 +1311,7 @@ textarea,input{
   }
   &:hover{
     background: -webkit-linear-gradient(#fcd913, #242f02);
-    font-family: "Orbitron", sans-serif;
+    font-family: var(--primary-font--);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -1355,7 +1338,7 @@ textarea,input{
   text-align: center;
   font-size: 48px;
   background: -webkit-linear-gradient(#000000, #023939);
-  font-family: "Orbitron", sans-serif;
+  font-family: var(--primary-font--);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   &:after{
@@ -1363,7 +1346,7 @@ textarea,input{
   }
   &:hover{
     background: -webkit-linear-gradient(#fcd913, #242f02);
-    font-family: "Orbitron", sans-serif;
+    font-family: var(--primary-font--);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -1391,7 +1374,7 @@ textarea,input{
   text-align: center;
   font-size: 48px;
   background: -webkit-linear-gradient(#000000, #023939);
-  font-family: "Orbitron", sans-serif;
+  font-family: var(--primary-font--);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   &:after{
@@ -1399,7 +1382,7 @@ textarea,input{
   }
   &:hover{
     background: -webkit-linear-gradient(#fcd913, #242f02);
-    font-family: "Orbitron", sans-serif;
+    font-family: var(--primary-font--);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
