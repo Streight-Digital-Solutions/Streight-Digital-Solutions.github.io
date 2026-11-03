@@ -21,7 +21,7 @@
 
 #popup{
   visibility: visible;
-  position: absolute;
+  position: fixed;
   justify-content: center;
   width: 100%;
   height: 100%;
@@ -55,7 +55,7 @@
 .branding{
   position: relative;
   display: block;
-  width: 30%;
+  width: 100%;
   z-index: 0;
 }
 
@@ -68,7 +68,6 @@
 body,html{
   margin: 0;
   padding:0;
-  height: 100%;
   overflow-x: hidden;
 }
 section{
@@ -116,8 +115,9 @@ nav {
   border-color: var(--primary-color--);
   border: solid var(--tertiary-color--);
   border-radius: 10px;
-  margin: 3.4vw;
+  margin: 3.4vw auto;
   z-index: 0;
+  width:15vw;
   
 }
 
@@ -152,7 +152,7 @@ nav a.active {
   border-color: var(--primary-color--);
   border: solid var(--tertiary-color--);
   border-radius: 10px;
-  margin: auto;
+  margin: 5vw auto;
   z-index: 0;
   width: fit-content;
 }
@@ -214,7 +214,81 @@ nav a.active {
 }
 
 
+/*----------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------   NEW CLIENTS  ----------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------*/
+.clients-section{
+  margin-top: 50px;
+  height:fit-content;
+  padding-top: 0;
+  z-index: 0;
+}
+.clients-title {
+    display: block;
+    color: var(--primary-color--);
+    font-family: var(--primary-font--);
+    font-size: 100px;
+    z-index: 0;
+    font-size: 80px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.client-title {
+    display: block;
+    color: #011f27;
+    font-family: var(--primary-font--);
+    font-size: 70px;
+    z-index: 0;
+    text-align: center;
+}
+.client-card {
+  height: fit-content;
+  border: 5px solid  var(--primary-color--);
+  border-radius: 20px;
+  background-color: var(--primary-color--);
+  align-items: center;
+  margin: 0 5%;
+  h2{
+    color:#011f27;
+  }
+  button{
+    margin-bottom:1.5vw
+  }
+  &:hover{
+    border: 5px solid  var(--secondary-color--);
+    background-color: var(--tertiary-color--);
+    background: linear-gradient(#161615, #697b7f);
+    font-family: var(--primary-font--);
+    .client-title,h2{
+      color:var(--primary-color--)
+    }
+    }
+  }
+.youtube{
+  display:flex;
+  margin: 1vw auto;
+  width:90%;
+  height:30vh;
+  border-radius: 10px;
+}
+.store-item-image {
+  display: block;
+  border-radius: 20px ;
+  margin: 20px auto;
+  width: 100%;
+  height: 40%;
+}
 
+.client-cards {
+  max-width: 100%;
+  height: fit-content;
+  margin: 1px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  justify-self: center;
+  align-self: center;
+  grid-gap: 50px;
+}
 /*----------------------------------------------------------------------------------------------------------------*/
 /*--------------------------------------------   HEADINGS & TEXT  ------------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------------------*/
@@ -235,6 +309,14 @@ h1{
   font-family: var(--primary-font--);
   font-size: 3vw;
 }
+h2{
+  margin: 0 auto;
+  text-align: center;
+  color: var(--primary-color--);
+  font-family: var(--primary-font--);
+  font-size: 2vw;
+}
+
 .title {
     display: block;
     color: var(--primary-color--);

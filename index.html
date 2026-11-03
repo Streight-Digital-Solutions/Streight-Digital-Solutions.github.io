@@ -48,17 +48,18 @@
 
 
     <body>
-        <!-- Background Video -->
-        <video autoplay muted loop class="video">
-            <source src="./assets/videos/backgroundvideo.mp4" type="video/mp4">
-        </video>
+        <div id="popup">
+            <h1>Attention</h1>
+            <p>This website contains highly vibrant colors and video. 
+            Light sensitive viewers please be advised.</p>
+            <button class="popup-button" onclick="remove();">Noted</button>
+        </div>
         <div class="mask">
-            <div id="popup">
-                <h1>Attention</h1>
-                <p>This website contains highly vibrant colors and video. 
-                Light sensitive viewers please be advised.</p>
-                <button class="popup-button" onclick="remove();">Noted</button>
-            </div>
+            <!-- Background Video -->
+            <video autoplay muted loop class="video">
+                <source src="./assets/videos/backgroundvideo.mp4" type="video/mp4">
+            </video>
+
             <div class="hero">
                 <!-- Branding -->
                 <div class="branding">
@@ -74,6 +75,19 @@
                     </nav>
                 </div>
             </div>
+            <section class="cleints-section">
+                <h1 class="clients-title">New Clients</h1>
+                <div class="client-cards">
+                    <article class="client-card">
+                        <h1 class="client-title">Isaac Ward</h1>
+                        <h2>Financial Advisor</h2>
+                        <iframe class="youtube" src="https://www.youtube.com/embed/unoFGYa6M9k?el=0&amp;autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay"; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        
+                        <button class="buy-button"><a href="https://zack-ward.github.io/web/">See Website</a></button>
+
+                    </article>
+                </div>
+            </section>
 
             <footer>
                 <p class="copyright">© Streight Digital Solutions. All rights reserved.</p>
