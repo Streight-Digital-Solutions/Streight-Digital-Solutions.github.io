@@ -221,6 +221,12 @@ nav a.active {
     color: #000000;
   }
 }
+.term-list{
+    color: var(--primary-color--);
+    font-family: "Oxanium", sans-serif, bold;
+    font-size: 24px;
+    font-weight: 400;
+}
 /*----------------------------------------------------------------------------------------------------------------*/
 /*--------------------------------------------   NEW CLIENTS  ----------------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------------------*/
@@ -323,6 +329,13 @@ h2{
   font-family: var(--primary-font--);
   font-size: 2vw;
 }
+h3{
+  margin: 1vw 1vw;
+  text-align: left;
+  color: var(--secondary-color--);
+  font-family: var(--primary-font--);
+  font-size: 2vh;
+}
 
 .title {
     display: block;
@@ -347,7 +360,7 @@ h2{
     display: block;
     color: var(--primary-color--);
     font-family: var(--primary-font--);
-    font-size: 20px;
+    font-size: 2vw;
     z-index: 0;
 }
 .glowing-title {
@@ -411,8 +424,6 @@ h2{
 /*----------------------------------------------------------------------------------------------------------------*/
 /*--------------------------------------------   BUTTONS  --------------------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------------------*/
-
-
 .popup-button {
     justify-content: center;
     align-items: center;
@@ -700,7 +711,6 @@ html{
     display: block;
     color: #2f6370;
     font-family: var(--primary-font--);
-    font-size: 50px;
     z-index: 0;
     background-color: #00ffffc5;
     border-radius: 10px;
