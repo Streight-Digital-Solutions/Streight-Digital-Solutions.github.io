@@ -91,6 +91,16 @@ html,body{
   height: fit-content;
   background-color: #00000094;
   z-index: 0;
+  h1{
+    margin:0 4vw;
+  }
+  .privacy-paragraph{
+    color: var(--primary-color--);
+    font-family: var(--primary-font--);
+    margin:0 4vw;
+    font-size: 1vw;
+    z-index: 0;
+  }
 }
 
 #popup{
@@ -291,7 +301,7 @@ nav a.active {
 .inline-link{
   display: inline;
   text-decoration: none;
-  color: #030569;
+  color: #0408fa;
   &:hover{
     color: #000000;
   }
@@ -431,7 +441,7 @@ h3{
 }
 
 .p{
-    padding-left: 50px;
+    padding-left: 5vw;
     display: block;
     color: var(--primary-color--);
     font-family: var(--primary-font--);
