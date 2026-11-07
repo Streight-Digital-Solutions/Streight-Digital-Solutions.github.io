@@ -693,7 +693,7 @@ h3{
     background-color: #ff8903e9;
     .ad-card-description,.ad-card-title{
     font-family: "Tangerine", sans-serif;
-    font-size: 5vw;
+    font-size: 4.995vw;
     color: #ffffff;
     }
   }
@@ -1006,17 +1006,12 @@ textarea,input{
 /*----------------------------------------------------------------------------------------------------------------*/
 
 .ad-footer {
-  .copyright{
-    padding-top:4vw;
-  }
-
   a,.copyright{
     
     color:#ffb413;
   }
-  margin-top: 50px;
-  margin-bottom: 0;
-  width: 100%;
+  margin:2vw auto;
+  width: 50%;
   position: relative;
   height: fit-content;
   display:block;
@@ -1030,6 +1025,7 @@ textarea,input{
   color: var(--primary-color);
   font-family: var(--primary-font--);
   text-align: center;
+  padding-top: 1vw;
 }
 .ad-socials {
  display: flex;
@@ -1648,7 +1644,8 @@ input,textarea{
 textarea{
   height:10vw;
 }
-footer{
+footer,.ad-footer{
+  margin-top: 5vw;
   width:90%;
 }
 .instructional-paragraph{
