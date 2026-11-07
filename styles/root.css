@@ -885,15 +885,15 @@ textarea,input{
 .instructional-img-lrg{
   display: flex;
   margin: 0vw auto;
-  width: 50vw;
+  width: 30vw;
 }
 .instructional-img-med{
   display: flex;
   margin: 2vw auto;
-  width: 20vw;
+  width: 10vw;
   padding:3vw;
   background-color: #000000;
-  border-radius: 8vw;
+  border-radius: 3vw;
 }
 .instructional-section{
   h1{
