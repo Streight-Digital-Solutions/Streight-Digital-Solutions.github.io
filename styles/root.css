@@ -1615,12 +1615,34 @@ margin:0;
 
     font-size: 5vw;
   }
-  .copyright{
-    a{
-      display: block;
-    }
-    font-size: 3vw;
+
+}
+.copyright{
+  a{
+    display: block;
   }
+  font-size: 3vw;
+}
+.submit-button,
+.form-headings{
+  font-size: 6vw;
+}
+.submit-button{
+  margin:2vw;
+}
+.guidenav-adpage a{
+  font-size: 3vw;
+}
+form{
+  padding-bottom: 4vw;
+  width:100%;
+}
+input,textarea{
+  font-size: 5vw;
+  height:8vw;
+}
+textarea{
+  height:10vw;
 }
 footer{
   width:90%;
