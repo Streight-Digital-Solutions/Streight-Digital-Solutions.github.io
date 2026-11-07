@@ -23,6 +23,7 @@
   transition: width 0.1s ease-in-out, height 0.1s ease-in-out;
   filter: drop-shadow(0 0 0.75rem var(--primary-color--));
 }
+
 .custom-cursor.active{
   background-color: var(--primary-color--);
   top:-20px;
@@ -124,6 +125,7 @@ section{
   height:100%;
   padding: 0;
   margin:0;
+  cursor: none;
 }
 
 .ad-video{
@@ -394,7 +396,8 @@ nav a.active {
     color:#011f27;
   }
   button{
-    margin-bottom:1.5vw
+    margin-bottom:1.5vw;
+    cursor: none;
   }
   &:hover{
     border: 5px solid  var(--secondary-color--);
@@ -588,10 +591,12 @@ h3{
   font-size: 1vw;
   font-family: var(--primary-font--);
   width: 20vw;
+  cursor: none;
   &:hover{
     background-color: var(--primary-color--);
     color: #000000;
     a {
+      cursor: none;
       color: #000000;
     }
   }
@@ -612,6 +617,7 @@ h3{
     border-color: var(--primary-color--);
     font-size: 20px;
     font-family: var(--primary-font--);
+    cursor: none;
     &:hover{
         background-color: var(--primary-color--);
         color: #000000;
@@ -905,6 +911,7 @@ textarea{
   margin-top: 1vw;
   margin-bottom: 1vw;
   border-radius: 1vw;
+  cursor: none;
   &:hover{
     color:var(--primary-color--);
     background-color: #000000;
