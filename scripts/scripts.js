@@ -1,3 +1,25 @@
+//CUSTOM CURSOR --- RESOURCES:https://www.youtube.com/watch?v=OKvvjXu7WE8 
+const cursor = document.querySelector('.custom-cursor');
+
+document.addEventListener('mouseenter', () => {
+    cursor.style.display = 'block';
+});
+
+document.addEventListener('mouseleave', () => {
+    cursor.style.display = 'none';
+});
+
+document.addEventListener('mousemove', CurseTrack)
+document.addEventListener('mousedown', () => cursor.classList.add('active'));
+document.addEventListener('mouseup', () => cursor.classList.remove('active'));
+
+function CurseTrack(evt){
+    const w = cursor.clientWidth;
+    const h = cursor.clientHeight;
+    cursor.style.transform = `translate(${evt.clientX-w/2}px, ${evt.clientY-h/2}px)`;
+}
+
+//POPUP
 const popup = document.getElementById("popup");
 function remove(){ 
     popup.style.visibility = "hidden";
