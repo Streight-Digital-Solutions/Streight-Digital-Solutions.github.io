@@ -167,8 +167,6 @@ img.logo {
 /*----------------------------------------------------------------------------------------------------------------*/
 /*--------------------------------------------   NAVIGATION  -----------------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------------------*/
-
-
 .guidebox{
   width: 100%;
   justify-content: right;
@@ -1212,13 +1210,18 @@ footer {
 /*----------------------------------------------------------------------------------------------------------------*/
 .privacy-content{
   height:100%;
+  text-align: left;
 }
+
 .uc-privacy-policy{
+  .privacy-text{
+  text-align: left;
+}
   height: fit-content;
   .uc-privacy-container,
   .privacy-table-container{
     margin:2vw;
-    background: #00000067;
+    background: #000000be;
     width:95%
   }
   .uc-privacy-container{
@@ -1226,18 +1229,34 @@ footer {
   }
   h1{
     font-size: 2vw;
-    text-align: center;
   }
   h2{
     font-size: 1.7vw;
+    text-align: left;
   }
   h3{
     font-size: 2vw;
   }
+  h4{
+    font-size: 2vw;
+  }
   p{
     font-size: 1vw;
+    text-align: left;
   }
-.privacy-table th:nth-child(3), .privacy-table td:nth-child(3), .privacy-table th:nth-child(4), .privacy-table td:nth-child(4){
+  a{
+    color:#0459f7;
+    margin: 0;
+    padding:0;
+    width:fit-content;
+    &:hover{
+      color:#03bff8;
+    }
+
+  }
+.privacy-table th:nth-child(3),
+ .privacy-table td:nth-child(3),
+  .privacy-table th:nth-child(4){
   width: auto;
 }
 .privacy-table th{
@@ -1280,13 +1299,14 @@ footer {
   }
 }
 .policy-section{
-  background-color: #00000067;
+  background-color: #000000be;
   border-radius: 5vw;
   margin:2vw;
   padding: 2vw;
   h1{
     margin:0;
     padding:0;
+    text-align: left;
   }
 }
 /*----------------------------------------------------------------------------------------------------------------*/
