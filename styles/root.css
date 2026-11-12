@@ -868,6 +868,7 @@ html{
 }
 
 .term-title{
+    padding: 1vw;
     display: block;
     color: #23464f;
     font-family: var(--primary-font--);
@@ -876,8 +877,8 @@ html{
 }
 
 .term-description{
-    margin: 10px 10px 10px 10px;
-    padding-bottom: 20px;
+    padding: 0vw 1vw 1vw 1vw;
+    margin-top: 0;
     display: block;
     color: #23464f;
     font-family: var(--primary-font--);
@@ -1216,7 +1217,8 @@ footer {
 .uc-privacy-policy{
   .privacy-text{
   text-align: left;
-}
+  padding:0;
+  }
   height: fit-content;
   .uc-privacy-container,
   .privacy-table-container{
@@ -1228,7 +1230,7 @@ footer {
      border-radius: 5vw;
   }
   h1{
-    font-size: 2vw;
+    font-size: 4vw;
   }
   h2{
     font-size: 1.7vw;
@@ -1254,15 +1256,15 @@ footer {
     }
 
   }
-.privacy-table th:nth-child(3),
- .privacy-table td:nth-child(3),
-  .privacy-table th:nth-child(4){
-  width: auto;
-}
-.privacy-table th{
-  width:fit-content;
-  background: var(--primary-color--);
-}
+  .privacy-table th:nth-child(3),
+  .privacy-table td:nth-child(3),
+    .privacy-table th:nth-child(4){
+    width: auto;
+  }
+  .privacy-table th{
+    width:fit-content;
+    background: var(--primary-color--);
+  }
   h1,p,ul,h2,h3,h4,li,th,td,tr,.privacy-table a{
     margin:0 2vw;
     font-family: var(--primary-font--);
@@ -1286,9 +1288,20 @@ footer {
     background-color: #000000;
   }
   li,.privacy-list-item{
-    font-size: 0.8vw;
+    strong{
+    
+      font-size: 1vw;
+    }
+    a{
+      display: inline;
+    }
+    font-size: 1vw;
     padding:0;
     margin:0;
+  }
+  .privacy-list{
+    padding:0;
+    margin:0 4vw;
   }
   font-family: var(--primary-font--);
   font: var(--primary-font-color--);
@@ -1797,7 +1810,7 @@ footer {
     padding:0;
     z-index: -1;
   }
-  
+
   .title2{
       margin:0vw auto;
       font-size: 7vw;
