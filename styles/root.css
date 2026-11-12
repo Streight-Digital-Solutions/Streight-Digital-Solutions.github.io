@@ -1565,9 +1565,21 @@ footer {
     font-size: 2.5vw;
   }
 
-  .ad-card img{
-    width: 100%;
-    height: 100%;
+
+
+  .ad-slider{
+    margin: 6vw 0 0 0;
+    height: 65vw;
+    width: 290vw;
+    gap: 2vw;
+    a{
+      width: fit-content;
+    }
+  }
+
+  .slider-ad-card {
+      height: 60vw;
+      width: 95vw;
   }
 
   .slider-ad-card{
@@ -1576,6 +1588,23 @@ footer {
     }
   }
 
+
+  .ad-slider-image {
+    height: 100%;
+    width: 100%;
+  }
+
+  .ads-500x500{
+    grid-gap: 19px;
+    grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+  }
+
+  .ad-card{
+    .ad-card-title{
+      font-size: 5vw;
+      margin:1vw;
+    }
+  }
   .ad-card {
     &:hover{
       .ad-card-title,
@@ -1585,35 +1614,9 @@ footer {
     }
   }
 
-  .ad-slider{
-    margin: 6vw 0 0 0;
-    height: 25vh;
-    width: 300vw;
-    gap: 2vw;
-    a{
-      width: fit-content;
-    }
-  }
-
-  .ads-500x500{
-    grid-gap: 19px;
-    grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
-  }
-
-  .slider-ad-card {
-      height: 50vw;
-      width: 95vw;
-  }
-  .ad-card{
-    .ad-card-title{
-      font-size: 5vw;
-      margin:1vw;
-    }
-  }
-
-  .ad-slider-image {
+  .ad-card img{
+    width: 100%;
     height: 100%;
-    width: 100vw;
   }
 
   .glowing-title,.glowing-title:hover,.title{ 
