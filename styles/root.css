@@ -56,6 +56,7 @@ html,body{
   height: fit-content;
   background-color: #00000094;
   z-index: 0;
+  overflow-x: hidden;
   .privacy-paragraph{
     color: var(--primary-color--);
     font-family: var(--primary-font--);
@@ -145,7 +146,7 @@ section{
 }
 
 .ad-video{
-  width:100%;
+  max-width:100%;
   height:100%;
   object-fit: cover;
   position: fixed;
@@ -1506,12 +1507,15 @@ footer {
     justify-content: center;
     display:flex;
   }
+
   .guidenav a{
     font-size: 3.5vw;
   }
+
   .clients-title{
     font-size: 8vw;
   }
+
   .desktop-nav{
     display: block;
   }
