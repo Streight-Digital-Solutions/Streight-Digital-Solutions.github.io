@@ -127,11 +127,18 @@ section{
   a{
     color: #0141ff;
   }
-  background-image: linear-gradient(var(--primary-color--),#00000097);
+  text-align: center;
+  background-image: linear-gradient(var(--primary-color--),#00000000);
   border-radius:5vw;
   border:2px solid var(--primary-color--);
   margin:5vw;
   padding:3vw;
+  &:hover{
+    background-image: linear-gradient(#f0d807,#00000000);
+      a{
+        color: #e6ff01;
+      }
+  }
 }
 
 .video{
