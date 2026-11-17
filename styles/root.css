@@ -790,15 +790,18 @@ p{
   height: fit-content;
   border: 5px solid  var(--primary-color--);
   border-radius: 20px;
-  background-color: var(--primary-color--);
+  background-color: #01eeff9c;
   align-items: center;
   margin: 0 5%;
+  li{
+    font-size: 1.5vw;
+  }
   &:hover{
     border: 5px solid  var(--secondary-color--);
     background-color: var(--tertiary-color--);
-    background: linear-gradient(#161615, #067990);
+    background: linear-gradient(#16161570, #06799069);
     font-family: var(--primary-font--);
-    .store-item-title{
+    .store-item-title,li{
       color:var(--primary-color--)
     }
     }
@@ -1702,10 +1705,21 @@ footer {
   .card-title{
     font-size: 100%;
   }
-
-  .store-item-title{
-    font-size: 40px;
+  .store-item-card{
+    .store-item-title{
+      font-size: 40px;
+    }
+    ul{
+      li{
+        font-size: 7vw;
+      }
+      
+      width:90%;
+      
+      margin:4vw;
+    }
   }
+
   .title{
     font-size: 12vw;
   }
