@@ -162,7 +162,7 @@ img.logo {
     z-index: 0;
     filter: drop-shadow(0 0 0.75rem var(--primary-color--));
   &:hover{
-    animation: glow 1s ease-in-out infinite alternate;
+    animation: glow-grow 4s ease-in-out infinite;
   }
 }
 
@@ -497,6 +497,9 @@ h1{
   filter: drop-shadow(0 0 0.75rem #00fbff);
   border-radius: 5vw;
   animation:fadeup 2s;
+  &:hover{
+    animation: glow 4s ease-in-out infinite;
+  }
 }
 
 h2{
@@ -523,6 +526,9 @@ h3{
     font-size: 4vw;
     text-align: center;
     margin-bottom: 50px;
+    &:hover{
+      animation: glow 4s ease-in-out infinite;
+    }
 }
 
 .subtitle {
@@ -1104,6 +1110,9 @@ textarea,input{
     filter: drop-shadow(0 0 0.75rem #00fbff);
     border-radius: 5vw;
     animation:fadeup 2s;
+    &:hover{
+      animation: glow 4s ease-in-out infinite;
+    }
 }
 
 .profile-photo{
@@ -1112,6 +1121,11 @@ textarea,input{
   margin:5vw auto 2vw auto;
   border-radius: 90%;
   filter: drop-shadow(0 0 0.75rem var(--primary-color--));
+  animation:fadeup 2s;
+  &:hover{
+    animation: glow 2s ease-in-out infinite;
+  }
+  
 }
 
 .glowing-paragraph{
@@ -1561,7 +1575,7 @@ footer {
     z-index: 1;
     a{
       color: #f2f2f2;
-      width: 95%;
+      width: 100%;
       justify-content: center;
       text-align: center;
       padding:5px 0;
@@ -1990,16 +2004,37 @@ footer {
 /*----------------------------------------------------------------------------------------------------------------*/
 
 @keyframes glow {
-  from {
+  0% {
+    text-shadow: 0 0 10px #000000, 0 0 20px #fff, 0 0 30px var(--primary-color--), 0 0 40px var(--primary-color--), 0 0 50px var(--primary-color--), 0 0 60px var(--primary-color--), 0 0 70px var(--primary-color--);
+    filter: drop-shadow(0 0 0.75rem var(--primary-color--));
+  }
+  50% {
+    text-shadow: 0 0 20px #000000, 0 0 30px var(--primary-color--) 0 0 40px var(--primary-color--) 0 0 50px var(--primary-color--) 0 0 60px var(--primary-color--) 0 0 70px var(--primary-color--) 0 0 80px var(--primary-color--);
+    filter: drop-shadow(0 0 1rem #173636);
+  }
+  100% {
+    text-shadow: 0 0 10px #000000, 0 0 20px #fff, 0 0 30px var(--primary-color--), 0 0 40px var(--primary-color--), 0 0 50px var(--primary-color--), 0 0 60px var(--primary-color--), 0 0 70px var(--primary-color--);
+    filter: drop-shadow(0 0 0.75rem var(--primary-color--));
+  }
+}
+@keyframes glow-grow {
+  0% {
     text-shadow: 0 0 10px #000000, 0 0 20px #fff, 0 0 30px var(--primary-color--), 0 0 40px var(--primary-color--), 0 0 50px var(--primary-color--), 0 0 60px var(--primary-color--), 0 0 70px var(--primary-color--);
     filter: drop-shadow(0 0 0.75rem var(--primary-color--));
   }
   
-  to {
+  50% {
     text-shadow: 0 0 20px #000000, 0 0 30px var(--primary-color--) 0 0 40px var(--primary-color--) 0 0 50px var(--primary-color--) 0 0 60px var(--primary-color--) 0 0 70px var(--primary-color--) 0 0 80px var(--primary-color--);
-    filter: drop-shadow(0 0 0.9rem #173636);
+    filter: drop-shadow(0 0 1rem #173636);
+    height:16vw;
+    width:16vw;
+  }
+  100% {
+    text-shadow: 0 0 10px #000000, 0 0 20px #fff, 0 0 30px var(--primary-color--), 0 0 40px var(--primary-color--), 0 0 50px var(--primary-color--), 0 0 60px var(--primary-color--), 0 0 70px var(--primary-color--);
+    filter: drop-shadow(0 0 0.75rem var(--primary-color--));
   }
 }
+
 @keyframes grow{
   0%{};
   100%{transform: translateX(-100%);};
