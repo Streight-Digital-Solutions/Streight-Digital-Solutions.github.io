@@ -1,3 +1,50 @@
+//POPUP
+const popup = document.getElementById("popup");
+function remove(){ 
+    popup.style.visibility = "hidden";
+}
+
+const navigation = document.getElementById("mobile-nav");
+
+function displayMenu(){
+    if(navigation.style.visibility == "visible"){
+        // RESOURCES: https://www.youtube.com/watch?v=r1iul4uRFuE
+        gsap.to('.mobile-nav',{ height: '0vw', visibility: 'hidden', opacity: 0, y:-20, duration:2})
+    }
+
+    else{
+        gsap.to('.mobile-nav',{ height: 'fit-content', opacity: 1, visibility: 'visible', display: 'block', y:20, duration:2})
+    }
+}
+
+
+// icon.forEach((event) => event.addEventListener("mouseover", show));
+
+
+// FUNCTION THAT PLAYS THE UNIVERSAL SOUND EFFECT
+function playMusic(){
+    var audio = new Audio("../assets/audio/click.mp3");
+    audio.play();
+}
+// APPLY SOUND EFFECT TO ALL NAVIGATION LINKS
+var navitems = document.querySelectorAll("#nav-link");
+navitems.forEach((event) => event.addEventListener("mouseover", playMusic));
+
+// APPLY SOUND EFFECT TO ALL TERMS BUTTONS WHEN CLICKED
+var termbuttons = document.querySelectorAll("#action-button");
+termbuttons.forEach((event) => event.addEventListener("click", playMusic));
+
+
+
+
+
+
+
+
+
+
+
+
 //CUSTOM CURSOR --- RESOURCES:https://www.youtube.com/watch?v=OKvvjXu7WE8 
 const cursor = document.querySelector('.custom-cursor');
 
@@ -19,23 +66,8 @@ function CurseTrack(evt){
     cursor.style.transform = `translate(${evt.clientX-w/2}px, ${evt.clientY-h/2}px)`;
 }
 
-//POPUP
-const popup = document.getElementById("popup");
-function remove(){ 
-    popup.style.visibility = "hidden";
-}
-// FUNCTION THAT PLAYS THE UNIVERSAL SOUND EFFECT
-function playMusic(){
-    var audio = new Audio("../assets/audio/click.mp3");
-    audio.play();
-}
-// APPLY SOUND EFFECT TO ALL NAVIGATION LINKS
-var navitems = document.querySelectorAll("#nav-link");
-navitems.forEach((event) => event.addEventListener("mouseover", playMusic));
 
-// APPLY SOUND EFFECT TO ALL TERMS BUTTONS WHEN CLICKED
-var termbuttons = document.querySelectorAll("#action-button");
-termbuttons.forEach((event) => event.addEventListener("click", playMusic));
+
 
 
 // CONTACT FORM SUBMISSION
@@ -75,4 +107,5 @@ form.addEventListener('submit', async (e) => {
         submitBtn.disabled = false;
     }
 });
+
 
