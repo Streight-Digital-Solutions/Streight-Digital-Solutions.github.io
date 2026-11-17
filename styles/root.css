@@ -1504,6 +1504,9 @@ footer {
   }
 }
 @media screen and (max-width: 600px) {
+  #pricing{
+    margin-top: 4vw;
+  }
 
   .guidebox{
     width: 95%;
@@ -1864,6 +1867,20 @@ footer {
     .instructional-img-med{
       width:60%;
     }
+    .cta-section{
+      h1{
+        font-size: 5vw;
+        color: #000000da;
+      }
+      a{
+        color: #0141ff;
+      }
+      background-image: linear-gradient(var(--primary-color--),#00000097);
+      border-radius:5vw;
+      border:2px solid var(--primary-color--);
+      margin:4vw 4vw 0vw 4vw;
+      padding:3vw;
+    }
   }
   .copyright{
     a{
@@ -1957,7 +1974,7 @@ footer {
   .h1-option2{
     font-size: 10vw;
     width: 85%;
-    margin:2vw auto;
+    margin:4vw auto;
     padding:1vw;
   }
   .title{
