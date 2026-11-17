@@ -814,7 +814,7 @@ p{
   &:hover{
     border: 5px solid  var(--secondary-color--);
     background-color: var(--tertiary-color--);
-    .card-title,
+    li,.card-title,
     .web-card-title,
     .card-price1,
     .card-price2,
@@ -822,8 +822,8 @@ p{
     .card-description,
     .pos-price,
     .logo-price{
-    background: #000000;
     font-family: var(--primary-font--);
+    background-image: linear-gradient(#494949,#fbff00);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     }
