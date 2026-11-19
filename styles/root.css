@@ -593,7 +593,7 @@ p{
     display: block;
     color: #011f27;
     font-family: var(--primary-font--);
-    font-size: 70px;
+    font-size: 4vw;
     z-index: 0;
     text-align: center;
 }
@@ -2461,5 +2461,42 @@ footer {
   }
   to {
     --num10: 500;
+  }
+}
+
+@property --num11 {
+  syntax: "<integer>";
+  initial-value: 8;
+  inherits: false;
+}
+
+.template-price-discount2 {
+  animation: counter11 2s  alternate ease-in-out;
+  transition: --num11 1s;
+  counter-reset: none;
+  counter-reset: num var(--num11);
+  text-align: center;
+  font-size: 48px;
+  background: -webkit-linear-gradient(#000000, #023939);
+  font-family: var(--primary-font--);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  &:after{
+    content: counter(num);
+  }
+  &:hover{
+    background: -webkit-linear-gradient(#fcd913, #242f02);
+    font-family: var(--primary-font--);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+@keyframes counter11 {
+  from {
+    --num11: 0;
+  }
+  to {
+    --num11: 8;
   }
 }
